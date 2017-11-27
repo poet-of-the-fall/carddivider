@@ -45,6 +45,16 @@
 \fancyfoot[R]{\vspace{-8em}\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
 \renewcommand{\headrulewidth}{0pt}
 
+% Enum without indent
+\newcounter{mycounter}  
+\newenvironment{noindlist}
+{\begin{list}{\arabic{mycounter}.~~}{\usecounter{mycounter} \labelsep=0em \labelwidth=2em \leftmargin=2em \itemindent=0em \itemsep=-0.5em \topsep=1em}}
+{\end{list}}
+
+% Itemize without spacing
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=2em, itemsep=-1em, topsep=1em}
+
 % Shortcuts for often used icons
 \newcommand{\coin}[1]{\includegraphics[height=1em]{banner/coin.png}\hspace{-0.7em}\raisebox{0.25em}{\tiny{#1}}\hspace{0.3em}}
 \newcommand{\hex}{\includegraphics[height=1em]{banner/hex.png}}
@@ -68,7 +78,7 @@
 			\normalsize
 			\tableofcontents
 		\end{minipage}
-	    
+	    	
 	    \input{sets/de/basecards.tex}
 	    \input{sets/de/basic.tex}
 	   	\input{sets/de/basecards.tex}

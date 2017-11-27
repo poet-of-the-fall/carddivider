@@ -14,7 +14,7 @@
 	\cardicon{banner/coin.png}
 	\cardprice{4}
 	\cardtitle{Gesandter}
-	\cardcontent{}
+	\cardcontent{Die aufgedeckten Karten legst du zunächst offen vor dir aus. Kannst du auch nach dem Mischen deines Ablagestapels nur weniger als 5 Karten aufdecken, deckst du nur soviele auf, wie möglich. Dann wählt der Spieler links von dir eine dieser offenen Karten. Die gewählte Karte legst du auf deinen Ablagestapel, die restlichen Karten nimmst du auf die Hand.}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -24,7 +24,25 @@
 	\cardicon{banner/coin.png}
 	\cardprice{3}
 	\cardtitle{Schwarzmarkt}
-	\cardcontent{}
+	\cardcontent{\tiny{Vor dem Spiel mit der Aktionskarte Schwarzmarkt muss der dazugehörige Schwarzmarkt-Stapel zusammengestellt werden. Die Spieler einigen sich welche Karten verwendet werden sollen.
+	\\
+	\medskip
+	\\
+	Für die Zusammenstellung ist Folgendes zu beachten:
+	\begin{itemize}
+	\item Der Schwarzmarkt-Stapel muss aus mindestens 15 Karten bestehen.
+	\item Es dürfen nur Königreichkarten verwendet werden, die nicht im Vorrat sind.
+	\item Jede Karte darf nur einmal verwendet werden.
+	\end{itemize}
+	Die Spieler dürfen sich die Karten vor dem Spiel ansehen. Dann werden die verwendeten Karten gemischt und verdeckt neben dem Vorrat bereit gelegt. Der Schwarzmarkt-Stapel ist nicht Teil des Vorrats. Er wird weder für die Spielende-Bedingung beachtet, noch für andere Zwecke, die auf den Vorrat Bezug nehmen, z.B. Aktionskarten, die erlauben eine Karte zu nehmen (Werkstatt).
+	\\
+	\medskip
+	\\
+	Spielst du den Schwarzmarkt aus, musst du zunächst die obersten 3 Karten vom Schwarzmarkt-Stapel aufdecken. Nun darfst du eine dieser Karten kaufen. Es handelt sich hierbei um einen Kauf in der Aktionsphase, d. h. du darfst sowohl Geldkarten als auch virtuelles Geld verwenden. Der Kauf läuft also in gleicher Weise ab, wie in der Kaufphase. (Der einzige Unterschied ist, dass du nicht wie üblich eine Karte aus dem Vorrat kaufst, sondern eine der 3 aufgedeckten Karten vom Schwarzmarktstapel.) Die nicht gekauften Karten legst du in beliebiger Reihenfolge verdeckt unter den Schwarzmarkt-Stapel zurück. Du musst deinen Mitspielern nicht zeigen in welcher Reihenfolge du die Karten zurücklegst. Die ausgelspielten Geldkarten lässt du bis zur Aufräumphase vor dir liegen. Dieser Kauf verbraucht nicht deinen freien Kauf, du darfst also in der Kaufphase (mindestens) eine weitere Karte kaufen. Nicht verwendetes virtuelles Geld und auch überzählige Münzen ausgespielter Geldkarten stehen dir in der Kaufphase zur Verfügung.
+	\\
+	\medskip
+	\\
+	Wenn du den Schwarzmarkt ausspielst, aber keine Karte kaufen willst oder kannst (z.B. weil der Schwarzmarktstapel leer ist oder du nicht genügend Geld hast), erhältst du trotzdem +\coin{2} für die Kaufphase.\\}}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -34,7 +52,13 @@
 	\cardicon{banner/coin.png}
 	\cardprice{5}
 	\cardtitle{Geldversteck}
-	\cardcontent{}
+	\cardcontent{Das Geldversteck ist eine Geldkarte mit dem Wert \coin{2}, wie ein Silber. In der Aufräumphase wird das Geldversteck wie üblich abgelegt. Immer wenn ein Spieler seinen Ablagestapel mischt, führt er folgende Schritte aus:
+	\begin{noindlist}
+	\item Er sucht zunächst alle Geldversteck-Karten aus seinem Ablagestapel und legt sie beiseite.
+	\item Dann mischt er die verbliebenen Karten des Ablagestapels.
+	\item Nun sortiert er die Karten Geldversteck wieder an beliebigen Stellen seiner Wahl (auch ganz oben oder unten) in den Stapel ein. Dabei darf er Karten des Stapels abzählen, aber nicht ansehen.
+	\item Zuletzt legt er den Stapel als neuen Nachziehstapel bereit.
+	\end{noindlist}}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -44,7 +68,11 @@
 	\cardicon{banner/coin.png}
 	\cardprice{4}
 	\cardtitle{Carcasonne}
-	\cardcontent{}
+	\cardcontent{\emph{Errata:} Der Kartentext ist falsch, es sollte \enquote{Wenn du zu Beginn deiner Aufräumphase nicht mehr als eine weitere Aktionskarte im Spiel hast\dots} statt \enquote{Wenn du zu Beginn deiner Aufräumphase nur noch eine weitere Aktionskarte im Spiel hast\dots} heißen.
+	\\
+	\medskip
+	\\
+	Zuerst ziehst du immer eine Karte nach und erhältst +2 Aktionen. Wenn du zu Beginn deiner Aufräumphase die Karte Carcassonne und nicht mehr als eine weitere Aktionskarte im Spiel hast, darfst du dich entscheiden, Carcassonne oben auf deinen Nachziehstapel zu legen oder wie üblich auf den Ablagestapel zu legen. Hast du die Karte Carcassonne genau zweimal im Spiel und ansonsten keine weitere Aktionskarte im Spiel, darfst du eine oder beide Karten Carcassonne auf deinen Nachziehstapel legen.}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -54,7 +82,14 @@
 	\cardicon{banner/coin.png}
 	\cardprice{5}
 	\cardtitle{Gouverneur}
-	\cardcontent{}
+	\cardcontent{Zuerst erhältst du +1 Aktion. Dann wählst du eine der folgenden Optionen:
+	\begin{noindlist}
+	\item Du ziehst 3 Karten und jeder andere Spieler zieht 1 Karte.
+	\item Du nimmst dir 1 Gold und jeder andere Spieler nimmt sich 1 Silber.
+	\item Du darfst 1 Karte aus deiner Hand entsorgen und nimmst dir 1 Karte, die genau
+	\coin{2} mehr kostet als die entsorgte Karte und jeder andere Spieler darf 1 Karte entsorgen, die genau \coin{1} mehr kostet als die entsorgte Karte.
+	\end{noindlist}
+	Geh nach der Reihenfolge, beginnend mit dir selbst. Die Karten werden vom Vorrat genommen und auf den Ablagestapel gelegt. Sind im Vorrat keine Karten mehr übrig, können keine entsprechenden Karten genommen werden. Wählst du z.B. die zweite Option und es ist nur noch 1 Silber im Vorrat, bekommt es der Spieler links von dir und die anderen Spieler erhalten nichts. Bei der dritten Option nimmst du dir nur dann 1 Karte, wenn du vorher 1 Karte entsorgt hast und wenn 1 Karte mit den genauen geforderten Kosten im Vorrat verfügbar ist. Wenn du 1 Karte entsorgst, musst du dir 1 Karte nehmen, sofern möglich. Du kannst den ausgespielten Gouverneur nicht entsorgen, da er sich nicht mehr auf deiner Hand befindet. Du kannst aber einen anderen Gouverneur aus deiner Hand entsorgen.}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -64,7 +99,19 @@
 	\cardicon{banner/coin.png}
 	\cardprice{8}
 	\cardtitle{Prinz}
-	\cardcontent{}
+	\cardcontent{\tiny{Wenn du dich entscheidest, einen Prinzen zu spielen, legst du ihn sofort zur Seite. Er befindet sich damit allerdings nicht im Spiel. Anschließend wählst du eine Aktionskarte von deiner Hand, die zu diesem Zeitpunkt maximal \coin{4} kostet und legst diese ebenfalls zur Seite.
+	\\
+	\medskip
+	\\
+	Auch Karten mit Kosten von \coin{0}, wie die Preiskarten aus Reiche Ernte sowie Karten mit Kosten von \coin{X} + aus Die Gilden dürfen mit Hilfe des Prinzen zur Seite gelegt werden. Karten, deren Kosten einen Trank enthalten, dürfen dagegen nicht zur Seite gelegt werden.
+	\\
+	\medskip
+	\\
+	Zu Beginn eines Zuges musst du die zur Seite gelegte Aktionskarte spielen. Sie verbraucht dabei nicht deine freie Aktion. Sobald du die Aktionskarte ablegen musst, legst du sie stattdessen wieder zur Seite. Wenn du die Aktionskarte während deines Spielzugs aus dem Spielbereich entfernst (z.B. sie entsorgen musst) und sie dementsprechend in der Aufräumphase nicht mehr im Spiel ist, darfst du die Karte nicht wieder zur Seite legen. Die Wirkung des Prinzen wird sofort aufgehoben.
+	\\
+	\medskip
+	\\
+	Wenn du zu Beginn deines Zuges mehrere Karten spielen musst (z.B. Aktionskarten durch mehrere Prinzen oder Dauerkarten aus Seaside), darfst du selbst entscheiden, in welcher Reihenfolge du sie ausspielst. Die Karte \emph{PRINZ} muss zur Seite gelegt werden, damit sie einen Effekt hat. Den Prinzen zum Beispiel auf einen Thronsaal zu spielen erlaubt dir nicht, zwei Karten zur Seite zu legen, da du den Prinzen nur einmal zur Seite legen kannst. Alle zur Seite gelegten Prinzen und Aktionskarten gehören zum Kartensatz eines Spielers.\\}}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -72,7 +119,11 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardtitle{Sauna/Eisloch\qquad}
-	\cardcontent{}
+	\cardcontent{Spielvorbereitung: Legt auf diese Karte 5 Eisloch und oben darauf 5 Sauna.
+	\\
+	\medskip
+	\\
+	Es darf immer nur die oberste Karte des Stapels genommen oder gekauft werden.}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -82,7 +133,23 @@
 	\cardicon{banner/coin.png}
 	\cardprice{4}
 	\cardtitle{Sauna}
-	\cardcontent{}
+	\cardcontent{\tiny{\emph{Siehe auch die Hinweise zur Karte Eisloch!}
+	\\
+	\medskip
+	\\
+	Wenn du die Sauna ausspielst, ziehst du zuerst eine Karte und bekommst +1 Aktion. Du kannst dann sofort ein Eisloch aus deiner Hand ausspielen. Das verbraucht keine deiner Aktionen, einschließlich der Aktion, die die Sauna gewährt. Du darfst ein Eisloch auf diese Weise nur direkt nach dem Ausspielen der Sauna spielen, nicht, wenn du zwischendurch eine andere Aktionskarte ausgespielt hast, selbst wenn du eine Sauna im Spiel hast.
+	\\
+	\medskip
+	\\
+	Solange die Sauna im Spiel ist, darfst du jedes Mal, wenn du ein Silber ausspielst, eine Karte aus deiner Hand entsorgen. Wenn du das gleiche Silber mehrmals spielst, wie z.B. mit dem Falschgeld (Dominion - Dark Ages) oder der Krone (Dominion - Empires), darfst du jedes Mal eine Karte entsorgen, wenn du das Silber spielst.
+	\\
+	\medskip
+	\\
+	Wenn du ein Silber ausspielst, kannst du dir jedes Mal überlegen, ob du eine Karte entsorgen möchtest, du musst diese Entscheidung nicht einmal für den gesamten Zug treffen. Wenn du mehrere Saunen im Spiel hast und ein Silber ausspielst, kannst du für jede Sauna, die du im Spiel hast, eine Karte aus deiner Hand entsorgen. Du kannst dich jedes Mal immer noch dazu entschließen, keine Karte zu entsorgen.
+	\\
+	\medskip
+	\\
+	Wenn die Sauna das Spiel verlässt, weil sie zum Beispiel mit der Prozession (Dominion - Dark Ages) entsorgt wurde, kann ihr Effekt nicht mehr genutzt werden.\\}}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -92,7 +159,23 @@
 	\cardicon{banner/coin.png}
 	\cardprice{5}
 	\cardtitle{Eisloch}
-	\cardcontent{}
+	\cardcontent{Wenn du das Eisloch ausspielst, ziehst du zuerst 3 Karten. Du kannst dann sofort eine Sauna aus deiner Hand ausspielen. Das verbraucht keine deiner Aktionen, und du erhältst trotzdem die +1 Aktion der Sauna, wenn du sie auf diese Weise spielst.
+	\\
+	\medskip
+	\\
+	Du darfst eine Sauna auf diese Weise nur direkt nach dem Ausspielen des Eislochs spielen, nicht, wenn du zwischendurch eine andere Aktionskarte ausgespielt hast, selbst wenn du ein Eisloch im Spiel hast.
+	\\
+	\medskip
+	\\
+	\emph{Folgendes gilt sowohl für das Eisloch als auch für die Sauna:}
+	\\
+	\medskip
+	\\
+	Du kannst die Sauna und das Eisloch durch die Effekte der jeweils anderen Karte abwechselnd spielen, wobei du nur die Aktion für die erste ausgespielte Karte verbrauchst. Du kannst damit fortfahren, bis du nach dem Ausspielen der einen Karte die entsprechende andere Karte nicht mehr auf der Hand hast.
+	\\
+	\medskip
+	\\
+	Wenn du eine Sauna ausspielst, kannst du nicht sofort eine weitere Sauna aus deiner Hand ausspielen, ohne eine Aktion zu verbrauchen. Das gleiche gilt für das Ausspielen eines Eislochs nach einem anderen Eisloch.}
 \end{tikzpicture}
 \hspace{-1cm}
 \begin{tikzpicture}
@@ -100,6 +183,18 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardtitle{Ereignisse\qquad}
-	\cardcontent{}
+	\cardcontent{\tiny{\emph{Einladung:} Wenn du das Ereignis kaufst, nimmst du dir vom Vorrat eine Aktionskarte, die bis zu \coin{4} kostet und legst sie offen zur Seite. Wenn du sie beiseite gelegt hast, dann spielst du die Aktionskarte zu Beginn des nächsten Zuges aus. Das Ausspielen verbraucht nicht deine Standardaktion für den Zug. Um dich daran zu erinnern, dass du die Karte in deinem nächsten Zug ausspielst, kannst du sie seitwärts oder diagonal drehen, und sie dann richtig herum drehen, sobald du sie ausspielst.
+	\\
+	\medskip
+	\\
+	Wenn du die Aktionskarte bewegst, nachdem du sie genommen, aber bevor du sie zur Seite gelegt hast (z.B. indem du sie mit dem Wachturm (Dominion – Blütezeit) auf den Nachziehstapel legst), dann wird die Einladung zu der Aktionskarte den \enquote{Anschluss verlieren} und nicht in der Lage sein, sie zur Seite zu legen; in diesem Fall wirst du sie zu Beginn deines nächsten Zuges nicht ausspielen.
+	\\
+	\medskip
+	\\
+	Wenn du die Einladung nutzt, um ein Nomadencamp (Dominion – Hinterland) zu nehmen, wird die Einladung wissen, dass das Nomadencamp auf deinem Nachziehstapel zu finden ist, so dass du es in diesem Fall zur Seite legst (sofern du es nicht über einen anderen Effekt an eine andere Stelle verschoben hast).
+	\\
+	\medskip
+	\\
+	\emph{Errata:} Der letzte Satz auf der Karte müsste heißen: \enquote{Wenn du das tust, spiele sie zu Beginn deines nächsten Zuges.}\\}}
 \end{tikzpicture}
 \hspace{1cm}
