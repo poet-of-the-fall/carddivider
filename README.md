@@ -31,6 +31,6 @@ Uncomment the version you want to use and comment out the other one.
 
 ## Printing the PDF
 
-You can read more about the different ideas on how to print the card deviders on Eikos [website](http://www.phenx.de/dominion-kartentrenner/). I personally print them on A4 self-adhesive paper like [these](https://www.avery-zweckform.com/produkt/universal-etiketten-l4735rev-100) and stick it onto thick black cardboards like [these](https://www.amazon.de/Folia-614-50-90-Fotokarton/dp/B000OZN29C/ref=pd_lpo_vtph_229_lp_tr_t_2?_encoding=UTF8&psc=1&refRID=QXMVJYTY91CVWSV4WC7V).
+You can read more about the different ideas on how to print the card dividers on Eikos [website](http://www.phenx.de/dominion-kartentrenner/). I personally print them on A4 self-adhesive paper like [these](https://www.avery-zweckform.com/produkt/universal-etiketten-l4735rev-100) and stick it onto thick black cardboards like [these](https://www.amazon.de/Folia-614-50-90-Fotokarton/dp/B000OZN29C/ref=pd_lpo_vtph_229_lp_tr_t_2?_encoding=UTF8&psc=1&refRID=QXMVJYTY91CVWSV4WC7V).
 
 **Remember that your printer setting may scale the output**. For my use case, this is absolutely fine, as the cut output is nearly the same with as the Dominion cards and fits perfectly into my box. If you want the slightly bigger ones, set the no-scaling-option before you print it.
