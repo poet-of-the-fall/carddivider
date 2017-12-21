@@ -16,357 +16,424 @@
 	\cardtitle{Aufbau}
 	\cardcontent{Zuerst musst du eine Karte aus deiner Hand entsorgen. Den gerade ausgespielten Ausbau kannst du nicht entsorgen, da du ihn nicht mehr auf der Hand hast. Hast du keine Karte mehr auf der Hand, kannst du keine Karte entsorgen und darfst dir auch keine Karten nehmen. Wenn du eine Karte entsorgt hast nimmst du dir 2 Karten, eine Karte, die genau \coin{1} mehr kostet, als die entsorgte Karte und eine Karte, die genau \coin{1} weniger kostet, als die entsorgte Karte. Du nimmst beide Karten aus dem Vorrat. Kannst du eine der beiden Karten nicht nehmen, weil keine Karte mit genau den geforderten Kosten im Vorrat ist, nimmst du dir trotzdem die andere Karte (wenn eine im Vorrat ist). Du legst die beiden Karten sofort auf deinen Nachziehstapel, anstatt auf deinen Ablagestapel. Du darfst die Karten in beliebiger Reihenfolge nehmen. Entsorgst du z. B. eine Herzogin (\coin{2}), so nimmst du dir eine Karte, die genau \coin{3} kostet (z. B. die Oase) und eine Karte, die genau \coin{1} kostet. Da es (üblicherweise) keine Karte gibt, die \coin{1} kostet, nimmst du dir keine weitere Karte. Entsorgst du z. B. ein Kupfer, so müsstest du dir eine Karte mit den Kosten \coin{1} und eine Karte mit den Kosten \coin{-1} nehmen, da es (üblicherweise) beide Karten nicht gibt, nimmst du dir keine Karte.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/gold.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Blutzoll}
-\cardcontent{Diese Karte ist eine Geldkarte mit dem Wert \coin{1}, wie ein Kupfer. Wenn du den Blutzoll ausspielst, darfst du dir ein Kupfer direkt auf die Hand nehmen. Du kannst dieses Kupfer also noch in diesem Zug ausspielen. Ist kein Kupfer mehr im Vorrat, so nimmst du dir kein Kupfer. Wenn du den Blutzoll nimmst oder kaufst, muss sich, beginnend mit dem Spieler links von dir, reihum jeder Mitspieler einen Fluch nehmen. Sind nicht mehr genügend Flüche im Vorrat, werden nur so viele verteilt wie möglich. Blutzoll ist keine Angriffskarte und kann z. B. nicht mit dem Burggraben abgewehrt werden.}
+	\card
+	\cardstrip
+	\cardbanner{banner/gold.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Blutzoll}
+	\cardcontent{Diese Karte ist eine Geldkarte mit dem Wert \coin{1}, wie ein Kupfer. Wenn du den Blutzoll ausspielst, darfst du dir ein Kupfer direkt auf die Hand nehmen. Du kannst dieses Kupfer also noch in diesem Zug ausspielen. Ist kein Kupfer mehr im Vorrat, so nimmst du dir kein Kupfer. Wenn du den Blutzoll nimmst oder kaufst, muss sich, beginnend mit dem Spieler links von dir, reihum jeder Mitspieler einen Fluch nehmen. Sind nicht mehr genügend Flüche im Vorrat, werden nur so viele verteilt wie möglich. Blutzoll ist keine Angriffskarte und kann z. B. nicht mit dem Burggraben abgewehrt werden.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Botschaft}
-\cardcontent{Wenn du die Botschaft ausspielst, ziehst du zunächst 5 Karten auf deine Hand nach. Wenn du, auch nach dem Mischen deines Ablagestapels, nur weniger als 5 Karten nachziehen kannst, ziehst du nur soviele Karten nach wie möglich. Dann legst du 3 Karten aus deiner Hand ab. Du kannst also auch Karten ablegen, die du gerade nachgezogen hast. Wenn du die Botschaft nimmst oder kaufst, muss sich, beginnend mit dem Spieler links von dir, reihum jeder Spieler ein Silber nehmen. Ist kein Silber mehr im Vorrat, nimmt der Spieler kein Silber.}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Botschaft}
+	\cardcontent{Wenn du die Botschaft ausspielst, ziehst du zunächst 5 Karten auf deine Hand nach. Wenn du, auch nach dem Mischen deines Ablagestapels, nur weniger als 5 Karten nachziehen kannst, ziehst du nur so viele Karten nach wie möglich. Dann legst du 3 Karten aus deiner Hand ab. Du kannst also auch Karten ablegen, die du gerade nachgezogen hast. Wenn du die Botschaft nimmst oder kaufst, muss sich, beginnend mit dem Spieler links von dir, reihum jeder Spieler ein Silber nehmen. Ist kein Silber mehr im Vorrat, nimmt der Spieler kein Silber.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{4}
-\cardtitle{Edler Räuber}
-\cardcontent{Wenn du diese Karte ausspielst, erhältst du +\coin{1}. Wenn du diese Karte ausspielst \emph{und auch} wenn du diese Karte kaufst, muss beginnend bei dem Spieler links von dir, reihum jeder Mitspieler die obersten beiden Karten von seinem Nachziehstapel aufdecken. Hat der Spieler 1 Silber oder 1 Gold aufgedeckt, so muss er dieses entsorgen. Hat der Spieler ein Silber und ein Gold (oder auch 2 Silber bzw. 2 Gold) aufgedeckt, entscheidest du welches davon er entsorgen muss. Die andere aufgedeckte Karte legt er jeweils auf seinen Ablagestapel. Hat der Spieler weder Silber noch Gold aufgedeckt, so legt er beide Karten ab. Hat der Spieler überhaupt keine Geldkarte aufgedeckt, so legt er beide Karten ab \emph{und} nimmt sich ein Kupfer. Du musst alle entsorgten Silber und Gold nehmen. Wenn du den Edlen Räuber ausspielst, können deine Mitspieler mit Reaktionskarten, wie z. B. Burggraben (Dominion – Basisspiel), auf den Angriff reagieren. Wenn du den Edlen Räuber jedoch kaufst, dürfen deine Mitspieler keine Reaktionskarten aufdecken, da du den Edlen Räuber nicht ausgespielt hast.}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{4}
+	\cardtitle{Edler Räuber}
+	\cardcontent{Wenn du diese Karte ausspielst, erhältst du +\coin{1}. Wenn du diese Karte ausspielst \emph{und auch} wenn du diese Karte kaufst, muss beginnend bei dem Spieler links von dir, reihum jeder Mitspieler die obersten beiden Karten von seinem Nachziehstapel aufdecken. Hat der Spieler 1 Silber oder 1 Gold aufgedeckt, so muss er dieses entsorgen. Hat der Spieler ein Silber und ein Gold (oder auch 2 Silber bzw. 2 Gold) aufgedeckt, entscheidest du welches davon er entsorgen muss. Die andere aufgedeckte Karte legt er jeweils auf seinen Ablagestapel. Hat der Spieler weder Silber noch Gold aufgedeckt, so legt er beide Karten ab. Hat der Spieler überhaupt keine Geldkarte aufgedeckt, so legt er beide Karten ab \emph{und} nimmt sich ein Kupfer. Du musst alle entsorgten Silber und Gold nehmen. Wenn du den Edlen Räuber ausspielst, können deine Mitspieler mit Reaktionskarten, wie z. B. Burggraben (Dominion – Basisspiel), auf den Angriff reagieren. Wenn du den Edlen Räuber jedoch kaufst, dürfen deine Mitspieler keine Reaktionskarten aufdecken, da du den Edlen Räuber nicht ausgespielt hast.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/blue.png}
-\cardicon{banner/coin.png}
-\cardprice{4}
-\cardtitle{\scriptsize{Fahrender Händler}}
-\cardcontent{\begin{spacing}{0.1cm}\tiny{Wenn du diese Karte ausspielst, musst du eine Karte aus deiner Hand entsorgen. Wenn du das machst, nimmst du dir so viele Silber vom Vorrat, wie die Geld-Kosten der entsorgten Karte. Entsorgst du z. B. eine Karte, die 3 Geld kostet, so nimmst du dir 3 Silber, entsorgst du z. B. ein Kupfer (0 Geld), nimmst du dir kein Silber. Sind im Vorrat nicht mehr genügend Silber, nimmst du dir nur so viele wie möglich. Kannst du keine Karte aus der Hand entsorgen, nimmst du dir auch kein Silber. Sind die Kosten der Karten verändert (z. B. durch die Fernstraße), nimmst du dir nur soviele Silber, wie die entsorgte Karte in diesem Moment kostet. Entsorgst du z. B. ein Anwesen, während die Fernstraße im Spiel ist, nimmst du dir nur 1 Silber. Andere Kosten außer Geld, z. B. Tränke aus Dominion – Die Alchemisten, haben keine Auswirkungen darauf, wieviele Silber du dir nimmst.\\
-Der Fahrende Händler ist auch eine Reaktionskarte. Immer wenn du eine Karte nimmst, kannst du die Karte aus deiner Hand aufdecken. Du kannst den Fahrenden Händler aufdecken, wenn du von einem Angriff betroffen bist oder auch, wenn du in deinem eigenen Zug freiwillig oder unfreiwillig eine Karte nimmst oder kaufst. Wenn du das machst, nimmst du dir anstatt der Karte, die du dir eigentlich nehmen müsstest, ein Silber. Die andere Karte nimmst du nicht. Spielt z. B. ein Mitspieler die Hexe (Dominion – Basisspiel) aus, so kannst du den Fahrenden Händler aus deiner Hand aufdecken. Wenn du das machst, nimmst du dir keinen Fluch, sondern stattdessen ein Silber. Wenn du dir auf diese Art ein Silber nimmst, legst du es immer auf deinen Ablagestapel, auch wenn du die andere Karte z. B. auf die Hand genommen oder auf deinen Nachziehstapel gelegt hättest. Wenn du eine Karte kaufst, dir jedoch stattdessen ein Silber nimmst, musst du die ursprünglich gekaufte Karte trotzdem bezahlen. Wenn die Karte, die du ursprünglich nehmen müsstest, beim Nehmen eine Anweisung auslöst („Wenn du diese Karte nimmst ...“), wird diese nicht ausgelöst, weil du die Karte nicht nimmst. Wenn du z. B. einen Blutzoll kaufst, kannst du den Fahrenden Händler aus deiner Hand aufdecken und statt dem Blutzoll ein Silber nehmen. Kein Mitspieler muss sich einen Fluch nehmen, weil du den Blutzoll nicht genommen hast. Wenn die Karte, die du ursprünglich nehmen müsstest, beim Kaufen eine Anweisung auslöst („Wenn du diese Karte kaufst ...“), wird diese ausgelöst, weil der Kauf durchgeführt ist, obwohl du die Karte nicht nimmst. Wenn du z. B. ein Fruchtbares Land kaufst, kannst du den Fahrenden Händler aus deiner Hand aufdecken und statt dem Fruchtbaren Land ein Silber nehmen. Die zusätzliche Anweisung auf dem Fruchtbaren Land wird ausgelöst, weil du die Karte gekauft hast (selbst wenn du sie nicht wie üblich genommen hast). Du entsorgst also eine Karte aus deiner Hand und nimmst dir eine andere Karte, die 2 Geld kostet, genauso als hättest du das Fruchtbare Land nach deinem Kauf auch wirklich genommen.\\}
-	\end{spacing}
-	}
+	\card
+	\cardstrip
+	\cardbanner{banner/blue.png}
+	\cardicon{banner/coin.png}
+	\cardprice{4}
+	\cardtitle{\tiny{Fahrender Händler}}
+	\cardcontent{\miniscule{\begin{Spacing}{1}
+	\vspace{1em}
+	Wenn du diese Karte ausspielst, musst du eine Karte aus deiner Hand entsorgen. Wenn du das machst, nimmst du dir so viele Silber vom Vorrat, wie die Geld-Kosten der entsorgten Karte. Entsorgst du z. B. eine Karte, die 3 Geld kostet, so nimmst du dir 3 Silber, entsorgst du z. B. ein Kupfer (0 Geld), nimmst du dir kein Silber. Sind im Vorrat nicht mehr genügend Silber, nimmst du dir nur so viele wie möglich. Kannst du keine Karte aus der Hand entsorgen, nimmst du dir auch kein Silber. Sind die Kosten der Karten verändert (z. B. durch die Fernstraße), nimmst du dir nur so viele Silber, wie die entsorgte Karte in diesem Moment kostet. Entsorgst du z. B. ein Anwesen, während die Fernstraße im Spiel ist, nimmst du dir nur 1 Silber. Andere Kosten außer Geld, z. B. Tränke aus Dominion – Die Alchemisten, haben keine Auswirkungen darauf, wieviele Silber du dir nimmst.
+
+	Der Fahrende Händler ist auch eine Reaktionskarte. Immer wenn du eine Karte nimmst, kannst du die Karte aus deiner Hand aufdecken. Du kannst den Fahrenden Händler aufdecken, wenn du von einem Angriff betroffen bist oder auch, wenn du in deinem eigenen Zug freiwillig oder unfreiwillig eine Karte nimmst oder kaufst. Wenn du das machst, nimmst du dir anstatt der Karte, die du dir eigentlich nehmen müsstest, ein Silber. Die andere Karte nimmst du nicht. Spielt z. B. ein Mitspieler die Hexe (Dominion – Basisspiel) aus, so kannst du den Fahrenden Händler aus deiner Hand aufdecken. Wenn du das machst, nimmst du dir keinen Fluch, sondern stattdessen ein Silber. Wenn du dir auf diese Art ein Silber nimmst, legst du es immer auf deinen Ablagestapel, auch wenn du die andere Karte z. B. auf die Hand genommen oder auf deinen Nachziehstapel gelegt hättest. Wenn du eine Karte kaufst, dir jedoch stattdessen ein Silber nimmst, musst du die ursprünglich gekaufte Karte trotzdem bezahlen. Wenn die Karte, die du ursprünglich nehmen müsstest, beim Nehmen eine Anweisung auslöst (\enquote{Wenn du diese Karte nimmst ...}), wird diese nicht ausgelöst, weil du die Karte nicht nimmst. Wenn du z. B. einen Blutzoll kaufst, kannst du den Fahrenden Händler aus deiner Hand aufdecken und statt dem Blutzoll ein Silber nehmen. Kein Mitspieler muss sich einen Fluch nehmen, weil du den Blutzoll nicht genommen hast. Wenn die Karte, die du ursprünglich nehmen müsstest, beim Kaufen eine Anweisung auslöst (\enquote{Wenn du diese Karte kaufst ...}), wird diese ausgelöst, weil der Kauf durchgeführt ist, obwohl du die Karte nicht nimmst. Wenn du z. B. ein Fruchtbares Land kaufst, kannst du den Fahrenden Händler aus deiner Hand aufdecken und statt dem Fruchtbaren Land ein Silber nehmen. Die zusätzliche Anweisung auf dem Fruchtbaren Land wird ausgelöst, weil du die Karte gekauft hast (selbst wenn du sie nicht wie üblich genommen hast). Du entsorgst also eine Karte aus deiner Hand und nimmst dir eine andere Karte, die 2 Geld kostet, genauso als hättest du das Fruchtbare Land nach deinem Kauf auch wirklich genommen.\end{Spacing}}}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Feilscher}
-\cardcontent{Wenn du diese Karte ausspielst erhältst du +\coin{2}. Wenn diese Karte im Spiel ist und du eine Karte kaufst, musst du dir immer eine zusätzliche Karte nehmen, die billiger ist als die gerade gekaufte und die keine Punktekarte ist. Die zusätzliche Karte nimmst du aus dem Vorrat und legst sie auf deinen Ablagestapel. Hast du einen Feilscher im Spiel und kaufst eine Provinz, so kannst du dir z. B. ein Gold nehmen. Du nimmst dir nur eine zusätzliche Karte, wenn du eine Karte kaufst. Wenn du eine Karte auf eine andere Art nimmst, nimmst du dir keine weitere Karte. Ist im Vorrat keine billigere Karte, als die gerade gekaufte, so nimmst du dir keine zusätzliche Karte. Diese Anweisung gilt nur solange der Feilscher im Spiel ist. Spielst du den Feilscher z. B. auf einen Thronsaal, spielst du die Karte zwar zweimal aus, die Karte ist jedoch nur einmal im Spiel. Du darfst dir in diesem Fall also nicht 2 zusätzliche Karten nehmen. Hast du 2 Feilscher im Spiel, so darfst (und musst) du dir auch 2 zusätzliche Karten nehmen. Kombinierte Punktekarten sind auch Punktekarten und dürfen nicht mit dem Feilscher genommen werden.}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Feilscher}
+	\cardcontent{Wenn du diese Karte ausspielst erhältst du +\coin{2}. Wenn diese Karte im Spiel ist und du eine Karte kaufst, musst du dir immer eine zusätzliche Karte nehmen, die billiger ist als die gerade gekaufte und die keine Punktekarte ist. Die zusätzliche Karte nimmst du aus dem Vorrat und legst sie auf deinen Ablagestapel. Hast du einen Feilscher im Spiel und kaufst eine Provinz, so kannst du dir z. B. ein Gold nehmen. Du nimmst dir nur eine zusätzliche Karte, wenn du eine Karte kaufst. Wenn du eine Karte auf eine andere Art nimmst, nimmst du dir keine weitere Karte. Ist im Vorrat keine billigere Karte, als die gerade gekaufte, so nimmst du dir keine zusätzliche Karte. Diese Anweisung gilt nur solange der Feilscher im Spiel ist. Spielst du den Feilscher z. B. auf einen Thronsaal, spielst du die Karte zwar zweimal aus, die Karte ist jedoch nur einmal im Spiel. Du darfst dir in diesem Fall also nicht 2 zusätzliche Karten nehmen. Hast du 2 Feilscher im Spiel, so darfst (und musst) du dir auch 2 zusätzliche Karten nehmen. Kombinierte Punktekarten sind auch Punktekarten und dürfen nicht mit dem Feilscher genommen werden.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Fernstrasse}
-\cardcontent{Wenn du diese Karte ausspielst, ziehst du zuerst eine Karte nach und erhältst +1 Aktion. Solange diese Karte im Spiel ist, kosten alle Karten \coin{1} weniger (niemals jedoch weniger als \coin{0}). Das gilt für alle Karten im Vorrat, auf den Händen der Spieler und in deren Kartenstapeln. Spielst du z. B. die Fernstraße, danach den Aufbau und entsorgst ein Kupfer aus deiner Hand, so kannst du dir z. B. ein Anwesen nehmen. Das Anwesen kostet nur noch 1 Geld, während das Kupfer immer noch 0 Geld kostet. Diese Anweisung gilt nur, solange die Fernstraße im Spiel ist. Spielst du die Fernstraße z. B. auf einen Thronsaal, spielst du die Karte zwar zweimal aus, die Karte ist jedoch nur einmal im Spiel. In diesem Fall kosten also alle Karten immer noch nur \coin{1} weniger. Hast du 2 Fernstraßen im Spiel, so kosten alle Karten \coin{2} weniger (immer noch bis zu einem Minimum von \coin{0}).}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Fernstrasse}
+	\cardcontent{Wenn du diese Karte ausspielst, ziehst du zuerst eine Karte nach und erhältst +1 Aktion. Solange diese Karte im Spiel ist, kosten alle Karten \coin{1} weniger (niemals jedoch weniger als \coin{0}). Das gilt für alle Karten im Vorrat, auf den Händen der Spieler und in deren Kartenstapeln. Spielst du z. B. die Fernstraße, danach den Aufbau und entsorgst ein Kupfer aus deiner Hand, so kannst du dir z. B. ein Anwesen nehmen. Das Anwesen kostet nur noch 1 Geld, während das Kupfer immer noch 0 Geld kostet. Diese Anweisung gilt nur, solange die Fernstraße im Spiel ist. Spielst du die Fernstraße z. B. auf einen Thronsaal, spielst du die Karte zwar zweimal aus, die Karte ist jedoch nur einmal im Spiel. In diesem Fall kosten also alle Karten immer noch nur \coin{1} weniger. Hast du 2 Fernstraßen im Spiel, so kosten alle Karten \coin{2} weniger (immer noch bis zu einem Minimum von \coin{0}).}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/green.png}
-\cardicon{banner/coin.png}
-\cardprice{6}
-\cardtitle{\scriptsize{Fruchtbares Land}}
-\cardcontent{Diese Königreichkarte ist eine Punktekarte, keine Aktionskarte. Sie hat bis zum Ende des Spiels keine Funktion. Bei der Wertung zählt sie 2 Siegpunkte. Wenn du das Fruchtbare Land kaufst (nicht, wenn du die Karte auf eine andere Art nimmst), musst du eine Karte aus deiner Hand entsorgen und dir eine Karte nehmen, die genau \coin{2} mehr kostet als die entsorgte Karte. Wenn im Vorrat keine Karte ist, die genau \coin {2} mehr kostet als die entsorgte Karte, oder du keine Karte entsorgen kannst, nimmst du dir keine Karte (außer dem gerade gekauften Fruchtbaren Land). \\ \smallskip
+	\card
+	\cardstrip
+	\cardbanner{banner/green.png}
+	\cardicon{banner/coin.png}
+	\cardprice{6}
+	\cardtitle{\tiny{Fruchtbares Land}}
+	\cardcontent{Diese Königreichkarte ist eine Punktekarte, keine Aktionskarte. Sie hat bis zum Ende des Spiels keine Funktion. Bei der Wertung zählt sie 2 Siegpunkte. Wenn du das Fruchtbare Land kaufst (nicht, wenn du die Karte auf eine andere Art nimmst), musst du eine Karte aus deiner Hand entsorgen und dir eine Karte nehmen, die genau \coin{2} mehr kostet als die entsorgte Karte. Wenn im Vorrat keine Karte ist, die genau \coin {2} mehr kostet als die entsorgte Karte, oder du keine Karte entsorgen kannst, nimmst du dir keine Karte (außer dem gerade gekauften Fruchtbaren Land).
+	
+	\smallskip
+
 	Im Spiel zu 3. und 4. werden 12 Karten Fruchtbares Land verwendet, im Spiel zu 2. werden 8 Karten Fruchtbares Land verwendet.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Gasthaus}
-\cardcontent{Wenn du diese Karte ausspielst, ziehst du zuerst 2 Karten nach und erhältst +2 Aktionen. Dann legst du 2 Karten aus deiner Hand ab. Du kannst auch Karten ablegen, die du gerade nachgezogen hast. \\ \smallskip 
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Gasthaus}
+	\cardcontent{Wenn du diese Karte ausspielst, ziehst du zuerst 2 Karten nach und erhältst +2 Aktionen. Dann legst du 2 Karten aus deiner Hand ab. Du kannst auch Karten ablegen, die du gerade nachgezogen hast.
+	
+	\smallskip 
+
 	Wenn du diese Karte nimmst oder kaufst, darfst du dir sofort deinen Nachziehstapel durchsehen (was üblicherweise nicht erlaubt ist) und beliebig viele Aktionskarten daraus in deinen Nachziehstapel einmischen. Du darfst auch das gerade genommene Gasthaus selbst einmischen, da es, wenn die Anweisung ausgeführt wird, bereits auf dem Ablagestapel liegt. Kombinierte Aktionskarten sind auch Aktionskarten. Du musst die Aktionskarten, die du in deinen Nachziehstapel einmischst, deinen Mitspielern vorzeigen.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{4}
-\cardtitle{\footnotesize{Gewürzhändler}}
-\cardcontent{Du \emph{darfst} eine Karte aus deiner Hand entsorgen. Wenn du das machst, wählst du eine der beiden angegebenen Kombinationen. \emph{Entweder} ziehst du 2 Karten nach und erhältst +1 Aktion oder du erhältst +\coin{2} und +1 Kauf. Wenn du keine Karte aus deiner Hand entsorgen kannst oder willst, darfst du auch keine der angegebenen Anweisungen ausführen.}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{4}
+	\cardtitle{\scriptsize{Gewürzhändler}}
+	\cardcontent{Du \emph{darfst} eine Karte aus deiner Hand entsorgen. Wenn du das machst, wählst du eine der beiden angegebenen Kombinationen. \emph{Entweder} ziehst du 2 Karten nach und erhältst +1 Aktion oder du erhältst +\coin{2} und +1 Kauf. Wenn du keine Karte aus deiner Hand entsorgen kannst oder willst, darfst du auch keine der angegebenen Anweisungen ausführen.}
 \end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{6}
-\cardtitle{Grenzdorf}
-\cardcontent{Wenn du das Grenzdorf ausspielst ziehst du 1 Karte von deinem Nachziehstapel und erhältst +2 Aktionen.\\ \smallskip Wenn du das Grenzdorf nimmst oder kaufst, musst du dir zusätzlich eine weitere Karte nehmen, die weniger kostet als das Grenzdorf. Üblicherweise nimmst du dir eine Karte, die bis zu \coin{5} kostet. Sollte das Grenzdorf jedoch weniger als \coin{6} gekostet haben, z. B. weil die Karte Fernstraße im Spiel ist, darfst du dir nur eine Karte nehmen, die weniger kostet als das Grenzdorf momentan. Du nimmst dir die zusätzliche Karte nur, wenn du das Grenzdorf nimmst oder kaufst, nicht jedesmal, wenn du es ausspielst.}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{6}
+	\cardtitle{Grenzdorf}
+	\cardcontent{Wenn du das Grenzdorf ausspielst ziehst du 1 Karte von deinem Nachziehstapel und erhältst +2 Aktionen.\\ \smallskip Wenn du das Grenzdorf nimmst oder kaufst, musst du dir zusätzlich eine weitere Karte nehmen, die weniger kostet als das Grenzdorf. Üblicherweise nimmst du dir eine Karte, die bis zu \coin{5} kostet. Sollte das Grenzdorf jedoch weniger als \coin{6} gekostet haben, z. B. weil die Karte Fernstraße im Spiel ist, darfst du dir nur eine Karte nehmen, die weniger kostet als das Grenzdorf momentan. Du nimmst dir die zusätzliche Karte nur, wenn du das Grenzdorf nimmst oder kaufst, nicht jedesmal, wenn du es ausspielst.}
 \end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{2}
-\cardtitle{Herzogin}
-\cardcontent{Wenn du die Herzogin ausspielst, erhältst du zunächst +\coin{2}. Dann sieht sich, beginnend mit dem Spieler links von dir, reihum jeder Spieler (auch du selbst) die oberste Karte von seinem Nachziehstapel an und entscheidet selbst, ob er sie ablegt oder zurück auf seinen Nachziehstapel legt. Kann ein Spieler, auch nach dem Mischen seines Ablagestapels, keine Karte ansehen, so sieht er keine Karte an. 
-	\\
-	\smallskip
-	\\
-	Wenn die Herzogin als eine der 10 Königreichkarten verwendet wird, darf sich jeder Spieler, immer wenn er ein Herzogtum nimmt oder kauft, zusätzlich eine Karte Herzogin nehmen.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Kartograph}
-\cardcontent{Du ziehst zunächst 1 Karte von deinem Nachziehstapel und erhältst +1 Aktion. Dann siehst du dir die obersten 4 Karten von deinem Nachziehstapel an. (Wenn du auch nach dem Mischen deines Ablagestapels nur weniger als 4 Karten ansehen kannst, siehst du nur soviele Karten an wie möglich.) Lege beliebig viele (also 0-4) dieser Karten ab. Lege die übrigen dieser angesehenen Karten in beliebiger Reihenfolge zurück auf deinen Nachziehstapel. Du musst die Karten, die du zurück legst, deinen Mitspielern nicht zeigen.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/goldblue.png}
-\cardicon{banner/coin.png}
-\cardprice{2}
-\cardtitle{Katzengold}
-\cardcontent{Diese Karte ist gleichzeitig eine Geld- und eine Reaktionskarte. Katzengold kann, wie jede andere Geldkarte, in der Kaufphase ausgespielt werden. Wenn du in diesem Zug zum ersten Mal ein Katzengold ausspielst, ist es \coin{1} wert, wie ein Kupfer. Jedes weitere Katzengold, das du in diesem Zug ausspielst, ist \coin{4} wert. Spielst du z. B. 3 Karten Katzengold in deiner Kaufphase aus, so hast du \coin{9} (\coin{1} + \coin{4} + \coin{4}) für deinen Kauf bzw. deine Käufe zur Verfügung. Katzengold ist auch eine Reaktionskarte. Immer wenn ein anderer Spieler eine Provinz nimmt oder kauft, darfst du Katzengold aus deiner Hand entsorgen. Wenn du das machst, nimmst du dir ein Gold und legst es sofort auf deinen Nachziehstapel. Ist kein Gold mehr im Vorrat, erhältst du kein Gold, du kannst das Katzengold jedoch trotzdem entsorgen.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{3}
-\cardtitle{Komplott}
-\cardcontent{\emph{Errata:} Der Kartentext ist falsch, es sollte „Zu Beginn deiner Aufräumphase darfst du eine Aktionskarte wählen, die du im Spiel hast. Wenn du die gewählte Karte in diesem Zug ablegst, lege sie auf deinen Nachziehstapel.“ statt „Zu Beginn deiner Aufräumphase darfst du eine deiner ausgespielten Aktionskarten wählen. Wenn du die gewählte Karte in dieser Aufräumphase ablegen würdest, darfst du sie stattdessen auf deinen Nachziehstapel legen.“ heißen. 
-	\\
-	\smallskip
-	\\
-	Wenn du diese Karte ausspielst, ziehst du zuerst 1 Karte nach und erhältst +1 Aktion. Zu Beginn deiner Aufräumphase darfst du eine Aktionskarte wählen, die du im Spiel hast. Du kannst das auch gerade ausgespielte Komplott selbst wählen. Statt die gewählte Aktionskarte in dieser Aufräumphase auf deinen Ablagestapel zu legen, darfst du sie auf deinen Nachziehstapel legen. Das machst du, bevor du Karten für die nächste Runde nachziehst. Wenn du die gewählte Aktionskarte nicht in dieser Aufräumphase ablegst (z. B. eine Dauerkarte aus Dominion – Seaside), kannst du sie auch nicht auf deinen Nachziehstapel legen.
-	\\
-	\smallskip
-	\\	
-	\emph{Anmerkung:} Das „Ablegen“ wird dennoch ausgelöst, bevor die Karte auf den Nachziehstapel gelegt wird.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{4}
-\cardtitle{\footnotesize{Lebenskünstler}}
-\cardcontent{Diese Karte hat 4 verschiedene Anweisungen, die du nacheinander ausführen musst (nur die letzte ist optional). Zuerst nimmst du dir ein Silber vom Vorrat und legst es auf deinen Ablagestapel. Ist kein Silber mehr im Vorrat, nimmst du dir kein Silber. Danach siehst du dir die oberste Karte deines Nachziehstapels an und entscheidest, ob du sie zurück auf deinen Nachziehstapel legst oder ablegst. Wenn dein Nachzieh- und dein Ablagestapel leer sind, siehst du dir keine Karte an. Dann ziehst du solange Karten nach, bis du 5 Karten auf der Hand hast. Hast du bereits 5 oder mehr Karten auf der Hand, ziehst du keine Karten nach. Kannst du, auch nach dem Mischen deines Ablagestapels, nicht genügend Karten nachziehen, so ziehst du nur soviele Karten nach wie möglich. Zuletzt darfst du eine Karte aus deiner Hand entsorgen, die keine Geldkarte ist. Kombinierte Geldkarten sind auch Geldkarten.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Mandarin}
-\cardcontent{Wenn du diese Karte ausspielst erhältst du zuerst +\coin{3}. Dann musst du eine Karte aus deiner Hand auf deinen Nachziehstapel legen. Wenn du keine Karte mehr auf der Hand hast, legst du keine Karte auf deinen Nachziehstapel.\\ \smallskip
-	Wenn du diese Karte nimmst oder kaufst, musst du alle Geldkarten, die du im Spiel hast, in beliebiger Reihenfolge zurück auf deinen Nachziehstapel legen. Du musst deinen Mitspielern nicht zeigen, in welcher Reihenfolge du die Karten zurück legst. Du musst alle Geldkarten, die du im Spiel hast, zurück legen. Geldkarten auf deiner Hand sind nicht im Spiel. Du legst sie also nicht auf den Nachziehstapel. Du hast jedoch alle Münzen, der ausgespielten Geldkarten in dieser Kaufphase zur Verfügung. Hast du z. B. +1 Kauf und 4 Gold ausgespielt und kaufst den Mandarin, so legst du die 4 Gold zurück auf deinen Nachziehstapel und hast trotzdem noch \coin{7} für den zweiten Kauf zur Verfügung. Du legst deine ausgespielten Geldkarten auch auf den Nachziehstapel zurück, wenn du den Mandarin nimmst, wobei du üblicherweise nur in der Kaufphase Geldkarten im Spiel hast.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Markgraf}
-\cardcontent{Zuerst ziehst du 3 Karten nach und erhältst +1 Kauf. Dann muss, beginnend mit dem Spieler links von dir, reihum jeder Mitspieler eine Karte nachziehen und dann solange Karten aus seiner Hand ablegen, bis er nur noch 3 Karten auf der Hand hat. Hat ein Spieler, auch nachdem er eine Karte nachgezogen hat, nur 3 oder weniger Karten auf der Hand, so legt er keine Karte ab.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{4}
-\cardtitle{Nomadencamp}
-\cardcontent{Wenn du diese Karte ausspielst, erhältst du +1 Kauf und +\coin{2}. Wenn du das Nomadencamp nimmst, musst du es sofort auf deinen Nachziehstapel legen, statt wie üblich auf den Ablagestapel.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{3}
-\cardtitle{Oase}
-\cardcontent{Du ziehst zuerst 1 Karte nach und erhältst +1 Aktion und +\coin{1}. Dann legst du eine Karte aus deiner Hand ab. Du darfst auch die gerade nachgezogene Karte ablegen. Wenn du keine Karte nachziehen kannst, weil dein Nachzieh- und Ablagestapel leer sind, musst du trotzdem eine Karte aus deiner Hand ablegen.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{3}
-\cardtitle{Orakel}
-\cardcontent{Reihum, beginnend mit dem Spieler links von dir, muss jeder Spieler (auch du selbst) die obersten beiden Karten von seinem Nachziehstapel aufdecken. Du entscheidest, ob er beide Karten ablegen oder zurück auf seinen Nachziehstapel legen muss. Der Spieler entscheidet selbst, in welcher Reihenfolge er die Karten auf seinen Nachziehstapel legt. Dann erst ziehst du 2 Karten nach. Hast du also deine eigenen Karten zurück auf deinen Nachziehstapel gelegt, so ziehst du diese Karten nach.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/gold.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Schatztruhe}
-\cardcontent{Diese Geldkarte ist \coin{3} wert, wie ein Gold. \\ \smallskip
-	Wenn du die Schatztruhe nimmst oder kaufst, musst du dir zusätzlich 2 Kupfer nehmen. Sind nur weniger als 2 Kupfer im Vorrat, so nimmst du dir nur so viele wie möglich. Du nimmst dir die 2 Kupfer nur, wenn du die Schatztruhe nimmst oder kaufst, nicht jedesmal, wenn du sie ausspielst.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/green.png}
-\cardicon{banner/coin.png}
-\cardprice{4}
-\cardtitle{Seidenstrasse}
-\cardcontent{Diese Königreichkarte ist eine Punktekarte, keine Aktionskarte. Sie hat bis zum Ende des Spiels keine Funktion. Bei der Wertung zählt sie 1 Siegpunkt für je volle 4 Punktekarten in deinem gesamten Kartensatz (Nachziehstapel, Ablagestapel und Handkarten). Bei Spielende suchst du aus deinem gesamten Kartensatz alle Punktekarten heraus und zählst sie. (Die Seidenstraße selbst ist auch eine Punktekarte und zählt zur Gesamtzahl der Punktekarten.) Die Ergebnis durch 4 geteilt und abgerundet ergibt die Punkte.\\ \smallskip
-	 Im Spiel zu 3. und 4. werden 12 Karten Seidenstraße verwendet, im Spiel zu 2. werden 8 Karten Seidenstraße verwendet.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/white.png}
-\cardicon{banner/coin.png}
-\cardprice{5}
-\cardtitle{Stallungen}
-\cardcontent{Du darfst eine Karte aus deiner Hand ablegen. Wenn du das machst, ziehst du 3 Karten nach und erhältst +1 Aktion. Wenn du keine Karte aus deiner Hand ablegen kannst oder willst, darfst du auch keine der angegebenen Anweisungen ausführen.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-\card
-\cardstrip
-\cardbanner{banner/greenblue.png}
-\cardicon{banner/coin.png}
-\cardprice{3}
-\cardtitle{Tunnel}
-\cardcontent{\begin{singlespace}\tiny{
-	Diese Karte ist gleichzeitig eine Punktekarte und eine Reaktionskarte. Bei der Wertung zählt sie 2 Siegpunkte. 
-	\\
-	\smallskip
-	\\
-	Die Reaktion kann eingesetzt werden, wenn du den Tunnel außerhalb einer Aufräumphase ablegen musst. Du darfst dann den Tunnel aufdecken bevor du ihn ablegst und nimmst dir ein Gold. Du darfst den Tunnel nicht „freiwillig“ ablegen, eine Kartenanweisung muss dich dazu zwingen. Dies kann in deinem eigenen Zug (z. B. durch die Oase) geschehen, oder im Zug eines Mitspielers (z. B. durch den Markgrafen). Die Reaktion setzt auch ein, wenn du den Tunnel nicht wie üblich aus deiner Hand ablegst, sondern von deinem Nachziehstapel oder von aufgedeckten Karten ablegst (z. B. durch das Orakel). Wenn der Tunnel normalerweise nicht aufgedeckt würde (z. B. durch den Kartographen), musst du ihn aufdecken, um dir ein Gold zu nehmen. Du musst den Tunnel nicht aufdecken (und dementsprechend auch kein Gold nehmen), wenn du ihn ablegst. Die Reaktion wird nicht ausgelöst, wenn du die Karte auf deinen Ablagestapel legst, ohne sie aufzudecken. Du kannst die Karte nicht aufdecken, wenn du sie gerade genommen oder gekauft hast. Du kannst den Tunnel auch nicht aufdecken, wenn du z. B. durch den Kanzler (Dominion – Basisspiel) deinen Nachziehstapel ablegst oder wenn durch die Besessenheit (Dominion – Die Alchemisten) entsorgte Karten auf deinen Ablagestapel gelegt werden. Die Reaktion setzt auch nicht ein, wenn du den Tunnel regulär in der Aufräumphase ablegst. Es muss eine Anweisung geben, die dich zwingt, eine Karte abzulegen. 
-	\\
-	\smallskip
-	\\	
-	Das Gold nimmst du dir aus dem Vorrat. Ist dort kein Gold mehr, nimmst du dir keines.}
-	\end{singlespace}
-	}
-\end{tikzpicture}
-\hspace{-1cm}
+\hspace{-0.6cm}
 \begin{tikzpicture}
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardicon{banner/coin.png}
 	\cardprice{2}
-	\cardtitle{Wegkreuzung}
-	\cardcontent{Decke deine gesamte Kartenhand auf. Dann ziehe soviele Karten nach, wie du Punktekarten auf deiner Hand hast. Kombinierte Punktekarten sind auch Punktekarten. Hast du keine Punktekarten auf der Hand, ziehst du auch keine Karten nach. Wenn du in diesem Zug zum ersten Mal eine Wegkreuzung ausspielst, erhältst du +3 Aktionen. Für alle Wegkreuzungen, die du danach in diesem Zug ausspielst, erhältst nur noch +1 Aktion. Spielst du die Karte z. B. durch den Thronsaal (Dominion – Basisspiel) zweimal aus (und hast in diesem Zug noch keine Wegkreuzung ausgespielt), so erhältst du beim ersten Mal +3 Aktionen, beim zweiten Ausspielen nochmals +1 Aktion, also insgesamt +4 Aktionen.}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
-	\cardcontent{\emph{Hinterland:}\\ \smallskip
-	\emph{Einführung:} \\ 
-	Aufbau, Feilscher, Gewürzhändler, Lebenskünstler, Markgraf, Nomadencamp, Oase, Schatztruhe, Stallungen, Wegkreuzung \\ 
-	\smallskip \emph{Lauterer Wettbewerb:} \\ 
-	Aufbau, Blutzoll, Edler Räuber, Fahrender Händler, Fruchtbares Land, Grenzdorf, Herzogin, Kartograph, Seidenstraße, Stallungen \\
-	\smallskip \emph{Gelegenheiten:} \\ 
-	Fahrender Händler, Feilscher, Fernstraße, Gewürzhändler, Grenzdorf, Herzogin, Katzengold, Komplott, Nomadencamp, Schatztruhe \\
-	\smallskip \emph{Eröffnungen:} \\ 
-	Botschaft, Gasthaus, Kartograph, Lebenskünstler, Mandarin, Nomadencamp, Oase, Orakel, Tunnel, Wegkreuzung \\
-}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
-	\cardcontent{\emph{Hinterland und Basisspiel:}\\ \smallskip
-	\emph{Straßenräuber:} \\ 
-	Bibliothek, Geldverleiher, Keller, Thronsaal, Werkstatt / Edler Räuber, Fernstraße, Gasthaus, Markgraf, Oase \\
-	\smallskip \emph{Abenteuerfahrt:} \\ 
-	Abenteurer, Jahrmarkt, Kanzler, Laboratorium, Umbau/ Fruchtbares Land, Gewürzhändler, Katzengold, Orakel, Wegkreuzung
-	\smallskip \emph{Hinterland und die Intrige:} \\ 
-	\smallskip \emph{Geld aus Nichts:} \\ 
-	Armenviertel, Große Halle, Handlanger, Kerkermeister, Kupferschmied / Kartograph, Lebenskünstler, Schatztruhe, Seidenstraße, Tunnel \\
-	\smallskip \emph{Am Hof des Herzogs:} \\ 
-	Anbau, Harem, Herzog, Maskerade, Verschwörer / Edler Räuber, Feilscher, Gasthaus, Herzogin, Komplott \\
-}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
-	\cardcontent{\emph{Hinterland und Seaside:}\\ \smallskip
-	\emph{Reisende:} \\ 
-	Ausguck, Beutelschneider, Handelsschiff, Insel, Lagerhaus / Fruchtbares Land, Kartograph, Seidenstraße, Stallungen, Wegkreuzung \\
-	\smallskip \emph{Diplomatie:} \\ 
-	Bazar, Botschafter, Embargo, Karawane, Schmuggler / Blutzoll, Botschaft, Edler Räuber, Fahrender Händler, Fruchtbares Land \\
-	\smallskip \emph{Hinterland und die Alchemisten:} \\ 
-	\smallskip \emph{Träume sind Schäume:} \\ 
-	Apotheker, Kräuterkundiger, Lehrling, Stein der Wei- sen, Verwandlung / Blutzoll, Herzogin, Katzengold, Komplott, Lebenskünstler \\
-	\smallskip \emph{Weinviertel:} \\ 
-	Golem, Lehrling, Universität, Vertrauter, Weinberg / Feilscher, Fernstraße, Fruchtbares Land, Nomadencamp, Wegkreuzung \\
-}
-\end{tikzpicture}
-\hspace{-1cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
-	\cardcontent{\emph{Hinterland und Blütezeit:}\\ \smallskip
-	\emph{Karriereleiter:} \\ 
-	Ausbau, Bischof, Hort, Münzer, Wachturm / Blutzoll, Edler Räuber, Fahrender Händler, Feilscher, Fruchtbares Land \\
-	\smallskip \emph{Schatzfund:} \\ 
-	Abenteuer, Bank, Denkmal, Handelsroute, Königliches Siegel/ Aufbau, Blutzoll, Katzengold, Mandarin, Schatztruhe \\
-	\smallskip \emph{Hinterland und Reiche Ernte:} \\ 
-	\smallskip \emph{Schmalhans:} \\ 
-	Füllhorn, Harlekin, Pferdehändler, Turnier, Weiler / Edler Räuber, Fahrender Händler, Katzengold, Mandarin, Tunnel \\
-	\smallskip \emph{Wanderzirkus:} \\ 
-	Bauerndorf, Festplatz, Harlekin, Menagerie, Treibjagd / Botschaft, Grenzdorf, Katzengold, Nomadencamp, Oase \\
-}
-\end{tikzpicture}
+	\cardtitle{Herzogin}
+	\cardcontent{Wenn du die Herzogin ausspielst, erhältst du zunächst +\coin{2}. Dann sieht sich, beginnend mit dem Spieler links von dir, reihum jeder Spieler (auch du selbst) die oberste Karte von seinem Nachziehstapel an und entscheidet selbst, ob er sie ablegt oder zurück auf seinen Nachziehstapel legt. Kann ein Spieler, auch nach dem Mischen seines Ablagestapels, keine Karte ansehen, so sieht er keine Karte an. 
 
-\hspace{1cm}
+	\smallskip
+
+	Wenn die Herzogin als eine der 10 Königreichkarten verwendet wird, darf sich jeder Spieler, immer wenn er ein Herzogtum nimmt oder kauft, zusätzlich eine Karte Herzogin nehmen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Kartograph}
+	\cardcontent{Du ziehst zunächst 1 Karte von deinem Nachziehstapel und erhältst +1 Aktion. Dann siehst du dir die obersten 4 Karten von deinem Nachziehstapel an. (Wenn du auch nach dem Mischen deines Ablagestapels nur weniger als 4 Karten ansehen kannst, siehst du nur so viele Karten an wie möglich.) Lege beliebig viele (also 0-4) dieser Karten ab. Lege die übrigen dieser angesehenen Karten in beliebiger Reihenfolge zurück auf deinen Nachziehstapel. Du musst die Karten, die du zurück legst, deinen Mitspielern nicht zeigen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/goldblue.png}
+	\cardicon{banner/coin.png}
+	\cardprice{2}
+	\cardtitle{Katzengold}
+	\cardcontent{Diese Karte ist gleichzeitig eine Geld- und eine Reaktionskarte. Katzengold kann, wie jede andere Geldkarte, in der Kaufphase ausgespielt werden. Wenn du in diesem Zug zum ersten Mal ein Katzengold ausspielst, ist es \coin{1} wert, wie ein Kupfer. Jedes weitere Katzengold, das du in diesem Zug ausspielst, ist \coin{4} wert. Spielst du z. B. 3 Karten Katzengold in deiner Kaufphase aus, so hast du \coin{9} (\coin{1} + \coin{4} + \coin{4}) für deinen Kauf bzw. deine Käufe zur Verfügung. Katzengold ist auch eine Reaktionskarte. Immer wenn ein anderer Spieler eine Provinz nimmt oder kauft, darfst du Katzengold aus deiner Hand entsorgen. Wenn du das machst, nimmst du dir ein Gold und legst es sofort auf deinen Nachziehstapel. Ist kein Gold mehr im Vorrat, erhältst du kein Gold, du kannst das Katzengold jedoch trotzdem entsorgen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{3}
+	\cardtitle{Komplott}
+	\cardcontent{\emph{Errata:} Der Kartentext ist falsch, es sollte \enquote{Zu Beginn deiner Aufräumphase darfst du eine Aktionskarte wählen, die du im Spiel hast. Wenn du die gewählte Karte in diesem Zug ablegst, lege sie auf deinen Nachziehstapel.} statt \enquote{Zu Beginn deiner Aufräumphase darfst du eine deiner ausgespielten Aktionskarten wählen. Wenn du die gewählte Karte in dieser Aufräumphase ablegen würdest, darfst du sie stattdessen auf deinen Nachziehstapel legen.} heißen. 
+
+	\smallskip
+
+	Wenn du diese Karte ausspielst, ziehst du zuerst 1 Karte nach und erhältst +1 Aktion. Zu Beginn deiner Aufräumphase darfst du eine Aktionskarte wählen, die du im Spiel hast. Du kannst das auch gerade ausgespielte Komplott selbst wählen. Statt die gewählte Aktionskarte in dieser Aufräumphase auf deinen Ablagestapel zu legen, darfst du sie auf deinen Nachziehstapel legen. Das machst du, bevor du Karten für die nächste Runde nachziehst. Wenn du die gewählte Aktionskarte nicht in dieser Aufräumphase ablegst (z. B. eine Dauerkarte aus Dominion – Seaside), kannst du sie auch nicht auf deinen Nachziehstapel legen.
+
+	\smallskip
+	
+	\emph{Anmerkung:} Das \enquote{Ablegen} wird dennoch ausgelöst, bevor die Karte auf den Nachziehstapel gelegt wird.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{4}
+	\cardtitle{\scriptsize{Lebenskünstler}}
+	\cardcontent{Diese Karte hat 4 verschiedene Anweisungen, die du nacheinander ausführen musst (nur die letzte ist optional). Zuerst nimmst du dir ein Silber vom Vorrat und legst es auf deinen Ablagestapel. Ist kein Silber mehr im Vorrat, nimmst du dir kein Silber. Danach siehst du dir die oberste Karte deines Nachziehstapels an und entscheidest, ob du sie zurück auf deinen Nachziehstapel legst oder ablegst. Wenn dein Nachzieh- und dein Ablagestapel leer sind, siehst du dir keine Karte an. Dann ziehst du solange Karten nach, bis du 5 Karten auf der Hand hast. Hast du bereits 5 oder mehr Karten auf der Hand, ziehst du keine Karten nach. Kannst du, auch nach dem Mischen deines Ablagestapels, nicht genügend Karten nachziehen, so ziehst du nur so viele Karten nach wie möglich. Zuletzt darfst du eine Karte aus deiner Hand entsorgen, die keine Geldkarte ist. Kombinierte Geldkarten sind auch Geldkarten.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Mandarin}
+	\cardcontent{Wenn du diese Karte ausspielst erhältst du zuerst +\coin{3}. Dann musst du eine Karte aus deiner Hand auf deinen Nachziehstapel legen. Wenn du keine Karte mehr auf der Hand hast, legst du keine Karte auf deinen Nachziehstapel.
+	
+	\smallskip
+	
+	Wenn du diese Karte nimmst oder kaufst, musst du alle Geldkarten, die du im Spiel hast, in beliebiger Reihenfolge zurück auf deinen Nachziehstapel legen. Du musst deinen Mitspielern nicht zeigen, in welcher Reihenfolge du die Karten zurück legst. Du musst alle Geldkarten, die du im Spiel hast, zurück legen. Geldkarten auf deiner Hand sind nicht im Spiel. Du legst sie also nicht auf den Nachziehstapel. Du hast jedoch alle Münzen, der ausgespielten Geldkarten in dieser Kaufphase zur Verfügung. Hast du z. B. +1 Kauf und 4 Gold ausgespielt und kaufst den Mandarin, so legst du die 4 Gold zurück auf deinen Nachziehstapel und hast trotzdem noch \coin{7} für den zweiten Kauf zur Verfügung. Du legst deine ausgespielten Geldkarten auch auf den Nachziehstapel zurück, wenn du den Mandarin nimmst, wobei du üblicherweise nur in der Kaufphase Geldkarten im Spiel hast.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Markgraf}
+	\cardcontent{Zuerst ziehst du 3 Karten nach und erhältst +1 Kauf. Dann muss, beginnend mit dem Spieler links von dir, reihum jeder Mitspieler eine Karte nachziehen und dann solange Karten aus seiner Hand ablegen, bis er nur noch 3 Karten auf der Hand hat. Hat ein Spieler, auch nachdem er eine Karte nachgezogen hat, nur 3 oder weniger Karten auf der Hand, so legt er keine Karte ab.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+	\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{4}
+	\cardtitle{\footnotesize{Nomadencamp}}
+	\cardcontent{Wenn du diese Karte ausspielst, erhältst du +1 Kauf und +\coin{2}. Wenn du das Nomadencamp nimmst, musst du es sofort auf deinen Nachziehstapel legen, statt wie üblich auf den Ablagestapel.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{3}
+	\cardtitle{Oase}
+	\cardcontent{Du ziehst zuerst 1 Karte nach und erhältst +1 Aktion und +\coin{1}. Dann legst du eine Karte aus deiner Hand ab. Du darfst auch die gerade nachgezogene Karte ablegen. Wenn du keine Karte nachziehen kannst, weil dein Nachzieh- und Ablagestapel leer sind, musst du trotzdem eine Karte aus deiner Hand ablegen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{3}
+	\cardtitle{Orakel}
+	\cardcontent{Reihum, beginnend mit dem Spieler links von dir, muss jeder Spieler (auch du selbst) die obersten beiden Karten von seinem Nachziehstapel aufdecken. Du entscheidest, ob er beide Karten ablegen oder zurück auf seinen Nachziehstapel legen muss. Der Spieler entscheidet selbst, in welcher Reihenfolge er die Karten auf seinen Nachziehstapel legt. Dann erst ziehst du 2 Karten nach. Hast du also deine eigenen Karten zurück auf deinen Nachziehstapel gelegt, so ziehst du diese Karten nach.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/gold.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Schatztruhe}
+	\cardcontent{Diese Geldkarte ist \coin{3} wert, wie ein Gold.
+	
+	\smallskip
+
+	Wenn du die Schatztruhe nimmst oder kaufst, musst du dir zusätzlich 2 Kupfer nehmen. Sind nur weniger als 2 Kupfer im Vorrat, so nimmst du dir nur so viele wie möglich. Du nimmst dir die 2 Kupfer nur, wenn du die Schatztruhe nimmst oder kaufst, nicht jedesmal, wenn du sie ausspielst.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/green.png}
+	\cardicon{banner/coin.png}
+	\cardprice{4}
+	\cardtitle{\footnotesize{Seidenstrasse}}
+	\cardcontent{Diese Königreichkarte ist eine Punktekarte, keine Aktionskarte. Sie hat bis zum Ende des Spiels keine Funktion. Bei der Wertung zählt sie 1 Siegpunkt für je volle 4 Punktekarten in deinem gesamten Kartensatz (Nachziehstapel, Ablagestapel und Handkarten). Bei Spielende suchst du aus deinem gesamten Kartensatz alle Punktekarten heraus und zählst sie. (Die Seidenstraße selbst ist auch eine Punktekarte und zählt zur Gesamtzahl der Punktekarten.) Die Ergebnis durch 4 geteilt und abgerundet ergibt die Punkte.
+	
+	\smallskip
+
+	 Im Spiel zu 3. und 4. werden 12 Karten Seidenstraße verwendet, im Spiel zu 2. werden 8 Karten Seidenstraße verwendet.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{5}
+	\cardtitle{Stallungen}
+	\cardcontent{Du darfst eine Karte aus deiner Hand ablegen. Wenn du das machst, ziehst du 3 Karten nach und erhältst +1 Aktion. Wenn du keine Karte aus deiner Hand ablegen kannst oder willst, darfst du auch keine der angegebenen Anweisungen ausführen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/greenblue.png}
+	\cardicon{banner/coin.png}
+	\cardprice{3}
+	\cardtitle{Tunnel}
+	\cardcontent{\tiny{
+	Diese Karte ist gleichzeitig eine Punktekarte und eine Reaktionskarte. Bei der Wertung zählt sie 2 Siegpunkte. 
+
+	\smallskip
+
+	Die Reaktion kann eingesetzt werden, wenn du den Tunnel außerhalb einer Aufräumphase ablegen musst. Du darfst dann den Tunnel aufdecken bevor du ihn ablegst und nimmst dir ein Gold. Du darfst den Tunnel nicht \enquote{freiwillig} ablegen, eine Kartenanweisung muss dich dazu zwingen. Dies kann in deinem eigenen Zug (z. B. durch die Oase) geschehen, oder im Zug eines Mitspielers (z. B. durch den Markgrafen). Die Reaktion setzt auch ein, wenn du den Tunnel nicht wie üblich aus deiner Hand ablegst, sondern von deinem Nachziehstapel oder von aufgedeckten Karten ablegst (z. B. durch das Orakel). Wenn der Tunnel normalerweise nicht aufgedeckt würde (z. B. durch den Kartographen), musst du ihn aufdecken, um dir ein Gold zu nehmen. Du musst den Tunnel nicht aufdecken (und dementsprechend auch kein Gold nehmen), wenn du ihn ablegst. Die Reaktion wird nicht ausgelöst, wenn du die Karte auf deinen Ablagestapel legst, ohne sie aufzudecken. Du kannst die Karte nicht aufdecken, wenn du sie gerade genommen oder gekauft hast. Du kannst den Tunnel auch nicht aufdecken, wenn du z. B. durch den Kanzler (Dominion – Basisspiel) deinen Nachziehstapel ablegst oder wenn durch die Besessenheit (Dominion – Die Alchemisten) entsorgte Karten auf deinen Ablagestapel gelegt werden. Die Reaktion setzt auch nicht ein, wenn du den Tunnel regulär in der Aufräumphase ablegst. Es muss eine Anweisung geben, die dich zwingt, eine Karte abzulegen. 
+
+	\smallskip
+	
+	Das Gold nimmst du dir aus dem Vorrat. Ist dort kein Gold mehr, nimmst du dir keines.}}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{banner/coin.png}
+	\cardprice{2}
+	\cardtitle{\footnotesize{Wegkreuzung}}
+	\cardcontent{Decke deine gesamte Kartenhand auf. Dann ziehe so viele Karten nach, wie du Punktekarten auf deiner Hand hast. Kombinierte Punktekarten sind auch Punktekarten. Hast du keine Punktekarten auf der Hand, ziehst du auch keine Karten nach. Wenn du in diesem Zug zum ersten Mal eine Wegkreuzung ausspielst, erhältst du +3 Aktionen. Für alle Wegkreuzungen, die du danach in diesem Zug ausspielst, erhältst nur noch +1 Aktion. Spielst du die Karte z. B. durch den Thronsaal (Dominion – Basisspiel) zweimal aus (und hast in diesem Zug noch keine Wegkreuzung ausgespielt), so erhältst du beim ersten Mal +3 Aktionen, beim zweiten Ausspielen nochmals +1 Aktion, also insgesamt +4 Aktionen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
+	\cardcontent{\emph{Hinterland:}
+	
+	\smallskip
+
+	\emph{Einführung:} \\ 
+	Aufbau, Feilscher, Gewürzhändler, Lebenskünstler, Markgraf, Nomadencamp, Oase, Schatztruhe, Stallungen, Wegkreuzung 
+
+	\smallskip 
+	
+	\emph{Lauterer Wettbewerb:} \\ 
+	Aufbau, Blutzoll, Edler Räuber, Fahrender Händler, Fruchtbares Land, Grenzdorf, Herzogin, Kartograph, Seidenstraße, Stallungen 
+
+	\smallskip 
+	
+	\emph{Gelegenheiten:} \\ 
+	Fahrender Händler, Feilscher, Fernstraße, Gewürzhändler, Grenzdorf, Herzogin, Katzengold, Komplott, Nomadencamp, Schatztruhe
+
+	\smallskip 
+	
+	\emph{Eröffnungen:} \\ 
+	Botschaft, Gasthaus, Kartograph, Lebenskünstler, Mandarin, Nomadencamp, Oase, Orakel, Tunnel, Wegkreuzung}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
+	\cardcontent{\emph{Hinterland und Basisspiel:}
+	
+	\smallskip
+
+	\emph{Straßenräuber:} \\ 
+	Bibliothek, Geldverleiher, Keller, Thronsaal, Werkstatt / Edler Räuber, Fernstraße, Gasthaus, Markgraf, Oase
+
+	\smallskip 
+	
+	\emph{Abenteuerfahrt:} \\ 
+	Abenteurer, Jahrmarkt, Kanzler, Laboratorium, Umbau/ Fruchtbares Land, Gewürzhändler, Katzengold, Orakel, Wegkreuzung
+
+	\smallskip 
+	
+	\emph{Hinterland und die Intrige:} 
+
+	\smallskip 
+	
+	\emph{Geld aus Nichts:} \\ 
+	Armenviertel, Große Halle, Handlanger, Kerkermeister, Kupferschmied / Kartograph, Lebenskünstler, Schatztruhe, Seidenstraße, Tunnel
+
+	\smallskip 
+	
+	\emph{Am Hof des Herzogs:} \\ 
+	Anbau, Harem, Herzog, Maskerade, Verschwörer / Edler Räuber, Feilscher, Gasthaus, Herzogin, Komplott}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
+	\cardcontent{\emph{Hinterland und Seaside:}
+	
+	\smallskip
+
+	\emph{Reisende:} \\ 
+	Ausguck, Beutelschneider, Handelsschiff, Insel, Lagerhaus / Fruchtbares Land, Kartograph, Seidenstraße, Stallungen, Wegkreuzung
+
+	\smallskip 
+	
+	\emph{Diplomatie:} \\ 
+	Bazar, Botschafter, Embargo, Karawane, Schmuggler / Blutzoll, Botschaft, Edler Räuber, Fahrender Händler, Fruchtbares Land 
+	
+	\smallskip 
+	
+	\emph{Hinterland und die Alchemisten:} \\ 
+	
+	\smallskip 
+	
+	\emph{Träume sind Schäume:} \\ 
+	Apotheker, Kräuterkundiger, Lehrling, Stein der Wei- sen, Verwandlung / Blutzoll, Herzogin, Katzengold, Komplott, Lebenskünstler 
+	
+	\smallskip 
+	
+	\emph{Weinviertel:} \\ 
+	Golem, Lehrling, Universität, Vertrauter, Weinberg / Feilscher, Fernstraße, Fruchtbares Land, Nomadencamp, Wegkreuzung}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
+	\cardcontent{\emph{Hinterland und Blütezeit:}
+	
+	\smallskip
+	
+	\emph{Karriereleiter:} \\ 
+	Ausbau, Bischof, Hort, Münzer, Wachturm / Blutzoll, Edler Räuber, Fahrender Händler, Feilscher, Fruchtbares Land 
+	
+	\smallskip 
+	
+	\emph{Schatzfund:} \\ 
+	Abenteuer, Bank, Denkmal, Handelsroute, Königliches Siegel/ Aufbau, Blutzoll, Katzengold, Mandarin, Schatztruhe 
+	
+	
+	\smallskip 
+	
+	\emph{Hinterland und Reiche Ernte:} 
+	
+	\smallskip 
+	
+	\emph{Schmalhans:} \\ 
+	Füllhorn, Harlekin, Pferdehändler, Turnier, Weiler / Edler Räuber, Fahrender Händler, Katzengold, Mandarin, Tunnel 
+	
+	\smallskip 
+	
+	\emph{Wanderzirkus:} \\ 
+	Bauerndorf, Festplatz, Harlekin, Menagerie, Treibjagd / Botschaft, Grenzdorf, Katzengold, Nomadencamp, Oase}
+\end{tikzpicture}
+\hspace{0.6cm}
