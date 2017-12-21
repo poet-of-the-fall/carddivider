@@ -4,37 +4,46 @@
 %   TikZ/PGF size settings for cards
 \pgfmathsetmacro{\cardwidth}{9.7cm}
 \pgfmathsetmacro{\cardheight}{7.7cm}
-\pgfmathsetmacro{\bannerwidth}{3.2cm}
-\pgfmathsetmacro{\iconwidth}{0.5cm}
+\pgfmathsetlengthmacro{\bannerwidth}{3.3cm}
+\pgfmathsetlengthmacro{\iconwidth}{0.5cm}
 \pgfmathsetmacro{\iconoffset}{0.175cm}
 \pgfmathsetmacro{\stripwidth}{0.2cm}
 \pgfmathsetmacro{\stripheight}{0.7cm}
 \pgfmathsetmacro{\contentoffset}{0.25cm}
 \pgfmathsetmacro{\contentoffsettop}{1.6cm}
-\pgfmathsetmacro{\contentwidth}{\cardwidth-\contentoffset-\contentoffset}
-\pgfmathsetmacro{\contentheight}{\cardheight-\contentoffset-\contentoffsettop}
-\pgfmathsetmacro{\cardoffset}{0.5cm}
+\pgfmathsetlengthmacro{\contentwidth}{\cardwidth-\contentoffset-\contentoffset}
+\pgfmathsetlengthmacro{\contentheight}{\cardheight-\contentoffset-\contentoffsettop}
+\pgfmathsetmacro{\cardoffset}{0.4cm}
 
 %   Stylings for elements
 \tikzset{
-	%   runde Ecken für die Karten
+	% Round corners for the cards
 	cardcorners/.style={
 		rounded corners=0.4cm
 	}
 }
 
-
 %   Create card with black background, white box and extension on top right
 \newcommand{\card}{
+	% Cut marks
+	% Vertical left
 	\draw ([xshift=0.1cm,yshift=-\cardoffset]0,0) -- ([xshift=0.1cm,yshift=\cardheight+\cardoffset]0,0);
+	% Vertical right
 	\draw ([xshift=\cardwidth-0.1cm,yshift=-\cardoffset]0,0) -- ([xshift=\cardwidth-0.1cm,yshift=\cardheight+\cardoffset]0,0);
+	% Horizontal bottom
 	\draw ([xshift=-\cardoffset,yshift=0.1cm]0,0) -- ([xshift=\cardwidth+\cardoffset,yshift=0.1cm]0,0);
+	% Horizontal top (upper)
 	\draw ([xshift=-\cardoffset,yshift=\cardheight-0.1cm]0,0) -- ([xshift=\cardwidth+\cardoffset,yshift=\cardheight-0.1cm]0,0);
+	% Horizontal top (lower)
 	\draw ([xshift=-\cardoffset,yshift=\cardheight-0.3cm]0,0) -- ([xshift=\cardwidth+\cardoffset,yshift=\cardheight-0.3cm]0,0);
+	% Black card frame
 	\node [anchor=south west,fill=framebg,minimum width=\cardwidth,minimum height=\cardheight] (main) at (0,0) {};
+	% White content area
 	\node [anchor=south west,fill=contentbg,minimum width=\contentwidth,minimum height=\contentheight,cardcorners] (content) at ([yshift=\contentoffset,xshift=\contentoffset]0,0) {};
-	\node [anchor=south east,\cardcolor,minimum width=\stripwidth,minimum height=\stripheight] at ([xshift=-0.6*\stripwidth,yshift=1.25*\contentoffset]content.north east) {\textsc{\cardextension}};
-	\node [anchor=south east,\cardcolor,minimum width=\stripwidth,minimum height=\stripheight] at ([xshift=-0.6*\stripwidth]content.north east) {\small{\textsc{\cardextensiontitle}}};
+	% Cardextension
+	\node [anchor=south east,\cardcolor,minimum width=\stripwidth,minimum height=\stripheight] at ([xshift=-0.6*\stripwidth,yshift=1.25*\contentoffset]content.north east) {\trajan \cardextension};
+	% Cardextensiontitle
+	\node [anchor=south east,\cardcolor,minimum width=\stripwidth,minimum height=\stripheight] at ([xshift=-0.6*\stripwidth]content.north east) {\small{\trajan \cardextensiontitle}};
 }
 
 %   Add banner on top left
@@ -55,11 +64,10 @@
 \newcommand{\cardprice}[1]{
 	\node [] at (cardicon) {
 		\small{
-			\textsc{#1}
+			\trajan #1
 		}
 	};
 }
-
 
 %   Add second icon
 \newcommand{\cardiconaddition}[1]{
@@ -72,7 +80,7 @@
 \newcommand{\cardpriceaddition}[1]{
 	\node [] at (cardiconaddition) {
 		\small{
-			\textsc{#1}
+			\trajan #1
 		}
 	};
 }
@@ -81,7 +89,7 @@
 \newcommand{\cardtitle}[1]{
 	\node [] at ([xshift=0.55*\iconwidth,yshift=1.1*\iconwidth]cardbanner.south) {
 		\small{
-			\textsc{#1}
+			\trajan #1
 		}
 	};
 }
@@ -99,7 +107,7 @@
 				\begin{minipage}{0.9\textwidth}
 					\raggedright
 					\scriptsize{
-						\textsf{#1}
+						#1
 					}
 				\end{minipage}
 			\end{minipage}
