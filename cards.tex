@@ -1,5 +1,7 @@
-\documentclass[a4paper]{article}
-\usepackage[margin=0cm,top=2cm]{geometry}
+%!TEX program = lualatex
+
+\documentclass[a4paper,oneside]{memoir}
+\usepackage[margin=0cm,top=1.75cm,bottom=1.75cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[german]{babel}
 \usepackage{microtype}
@@ -8,15 +10,13 @@
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage{rotating}
-\usepackage[scaled]{helvet}
 \usepackage[babel,german=quotes]{csquotes}
-\usepackage{fancyhdr}
 
-%   Colors for basic elements
+% Colors for basic elements
 \definecolor{framebg}{RGB}{0,0,0}
 \definecolor{contentbg}{RGB}{255,255,255}
 
-%   Colors to distinguish the extensions
+% Colors to distinguish the extensions
 \definecolor{basicgame}{RGB}{152,170,149}
 \definecolor{intrigue}{RGB}{225,106,85}
 \definecolor{seaside}{RGB}{100,145,189}
@@ -31,20 +31,32 @@
 \definecolor{nocturne}{RGB}{59,75,189}
 \definecolor{promo}{RGB}{241,177,59}
 
-%  Change emph command to writing text bold
+% Use Trajan as cardtitle font and TexGrey Termes as normal font
+\usepackage{fontspec}
+\setmainfont{TexGyre Termes}
+\newfontfamily{\trajan}[BoldFont=Trajan Pro Bold]{Trajan Pro}
+
+% Change emph command to writing text bold
 \DeclareTextFontCommand{\emph}{\boldmath\bfseries}
 
-% Change section numbering to Alph
+% Change section numbering to Alph, center section and reduce space after
 \renewcommand\thesection{\Alph{section}}
+\renewcommand\secheadstyle{\centering\Large\normalfont\noindent}
+\setaftersecskip{1sp}
 
-% Define Heading
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[C]{Dominion Card Dividers - Created by Danilo Gasdzik based on the works of Eiko Wagenknecht. \\ Dominion Kartentrenner - Erstellt von Danilo Gasdzik basierend auf der Arbeit von Eiko Wagenknecht. \\ \leftmark}
-\fancyfoot[L]{\vspace{-8em}\tiny{\hspace{1cm}Entlang der schwarzen Linien ausschneiden. Je nach gewünschter\\\hspace{1cm}Größe der Kartentrenner die obere oder untere Linie wählen.}}
-\fancyfoot[C]{\vspace{-8em}\thepage}
-\fancyfoot[R]{\vspace{-8em}\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
-\renewcommand{\headrulewidth}{0pt}
+% Define Header / Footer
+\makepagestyle{mystyle}
+\setheaderspaces{*}{3\onelineskip}{*}
+\makeevenhead{mystyle}{}{Dominion Card Dividers - Created by Danilo Gasdzik based on the works of Eiko Wagenknecht. \\ Dominion Kartentrenner - Erstellt von Danilo Gasdzik basierend auf der Arbeit von Eiko Wagenknecht. \\ \rightmark}{}
+\makeoddhead{mystyle}{}{Dominion Card Dividers - Created by Danilo Gasdzik based on the works of Eiko Wagenknecht. \\ Dominion Kartentrenner - Erstellt von Danilo Gasdzik basierend auf der Arbeit von Eiko Wagenknecht. \\ \leftmark}{}
+\setheadfoot{1em}{\onelineskip}
+\makeevenfoot{mystyle}{\tiny{\hspace{1cm}Entlang der schwarzen Linien ausschneiden. Je nach gewünschter\\\vspace{-0.5em}\hspace{1cm}Größe der Kartentrenner die obere oder untere Linie wählen.}}{\thepage}{\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
+\makeoddfoot{mystyle}{\tiny{\hspace{1cm}Entlang der schwarzen Linien ausschneiden. Je nach gewünschter\\\vspace{-0.5em}\hspace{1cm}Größe der Kartentrenner die obere oder untere Linie wählen.}}{\thepage}{\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
+\renewcommand*{\sectionmark}[1]{%
+  \markboth%
+  {\thesection.\ \MakeTextUppercase{#1}}%
+  {\thesection.\ \MakeTextUppercase{#1}}}
+\pagestyle{mystyle}
 
 % Enum without indent
 \newcounter{mycounter}  
@@ -60,15 +72,15 @@
 \newcommand{\coin}[1]{\includegraphics[height=1em]{banner/coin.png}\hspace{-0.7em}\raisebox{0.25em}{\tiny{#1}}\hspace{0.4em}}
 \newcommand{\hex}[1]{\includegraphics[height=1em]{banner/hex.png}\hspace{-0.75em}\raisebox{0.25em}{\tiny{\textcolor{white}{#1}}}\hspace{0.3em}}
 \newcommand{\victorypointtoken}[1]{\includegraphics[height=1em]{banner/victorypointtoken.png}\hspace{-0.65em}\raisebox{0.25em}{\tiny{\textcolor{white}{#1}}}\hspace{0.3em}}
-\newcommand{\victorypoint}{\includegraphics[height=1em]{banner/victorypoint.png}\hspace{0.2em}}}
+\newcommand{\victorypoint}{\includegraphics[height=1em]{banner/victorypoint.png}\hspace{0.2em}}
 \newcommand{\potion}{\includegraphics[height=1em]{banner/potion.png}}
 \newcommand{\negativecardmarker}{\includegraphics[height=1em]{banner/negativecardmarker.png}}
 \newcommand{\negativecoinmarker}{\includegraphics[height=1em]{banner/negativecoinmarker.png}}
 
-%   Draw cards in portrait format
-\input{format/tikzcardsportrait.tex}
-%   Draw cards in landscape format
-%\input{format/tikzcardslandscape.tex}
+% Draw cards in portrait format
+%\input{format/tikzcardsportrait.tex}
+% Draw cards in landscape format
+\input{format/tikzcardslandscape.tex}
 
 % Basic settings for this card set will be overwritten on each card set
 \newcommand{\cardcolor}{}
