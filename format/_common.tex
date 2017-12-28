@@ -1,0 +1,48 @@
+\usepackage[margin=0cm,top=1.75cm,bottom=1.75cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{rotating}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{xifthen}
+
+% Use Trajan as cardtitle font and TexGrey Termes as normal font
+\usepackage{fontspec}
+\setmainfont{TexGyre Termes}
+\newfontfamily{\trajan}[BoldFont=Trajan Pro Bold]{Trajan Pro}
+
+% Change emph command to writing text bold
+\DeclareTextFontCommand{\emph}{\boldmath\bfseries}
+
+% Change section numbering to Alph, center section and reduce space after
+\renewcommand\thesection{\Alph{section}}
+\renewcommand\secheadstyle{\centering\Large\normalfont\noindent}
+\setaftersecskip{1sp}
+
+% Define Header / Footer
+\makepagestyle{mystyle}
+\setheaderspaces{*}{3\onelineskip}{*}
+\makeevenhead{mystyle}{}{Dominion Card Dividers - Created by Danilo Gasdzik based on the works of Eiko Wagenknecht. \\ Dominion Kartentrenner - Erstellt von Danilo Gasdzik basierend auf der Arbeit von Eiko Wagenknecht. \\ \rightmark}{}
+\makeoddhead{mystyle}{}{Dominion Card Dividers - Created by Danilo Gasdzik based on the works of Eiko Wagenknecht. \\ Dominion Kartentrenner - Erstellt von Danilo Gasdzik basierend auf der Arbeit von Eiko Wagenknecht. \\ \leftmark}{}
+\setheadfoot{1em}{\onelineskip}
+\makeevenfoot{mystyle}{\tiny{\hspace{1cm}Entlang der schwarzen Linien ausschneiden. Je nach gewünschter\\\vspace{-0.5em}\hspace{1cm}Größe der Kartentrenner die obere oder untere Linie wählen.}}{\thepage}{\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
+\makeoddfoot{mystyle}{\tiny{\hspace{1cm}Entlang der schwarzen Linien ausschneiden. Je nach gewünschter\\\vspace{-0.5em}\hspace{1cm}Größe der Kartentrenner die obere oder untere Linie wählen.}}{\thepage}{\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
+\renewcommand*{\sectionmark}[1]{%
+  \markboth%
+  {\thesection.\ \MakeTextUppercase{#1}}%
+  {\thesection.\ \MakeTextUppercase{#1}}}
+\pagestyle{mystyle}
+
+% Enum without indent
+\newcounter{mycounter}  
+\newenvironment{noindlist}
+{\begin{list}{\arabic{mycounter}.~~}{\usecounter{mycounter} \labelsep=0em \labelwidth=2em \leftmargin=2em \itemindent=0em \itemsep=-0.5em \topsep=1em}}
+{\end{list}}
+
+% Itemize without spacing
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=2em, itemsep=-1em, topsep=1em}
