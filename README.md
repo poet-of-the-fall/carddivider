@@ -83,19 +83,26 @@ Further defined colors for the card sets:
 
 The ```format/_shortcuts.tex``` defines some frequently used commands to use them as a shortcut.
 
-- coin: Takes one optional argument and draws a coin containing the text of the given argument (usage: ```\coin[2]``` draws a coin containing a "2").
+- coin ( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/coin.png?raw=true" width="16"> 
+): Takes one optional argument and draws a coin containing the text of the given argument (usage: ```\coin[2]``` draws a coin containing a "2").
 
-- hex: Takes one optional argument and draws a hex containing the text of the given argument (usage: ```\hex[1]``` draws a hex containing a "1").
+- hex( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/hex.png?raw=true" width="16"> 
+): Takes one optional argument and draws a hex containing the text of the given argument (usage: ```\hex[1]``` draws a hex containing a "1").
 
-- victorypointtoken: Draws a victory point token (the one containing with a "1" on it, usage: ```\victorypointtoken```).
+- victorypointtoken( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/victorypointtoken.png?raw=true" width="16"> 
+): Draws a victory point token (the one containing with a "1" on it, usage: ```\victorypointtoken```). 
 
-- victorypoint: Draws a victory point icon (usage: ```\victorypoint```).
+- victorypoint( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/victorypoint.png?raw=true" width="16"> 
+): Draws a victory point icon (usage: ```\victorypoint```). 
 
-- potion: Draws a potion (like used in alchemy, usage: ```\potion```).
+- potion( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/potion.png?raw=true" width="16"> 
+): Draws a potion (like used in alchemy, usage: ```\potion```). 
 
-- negativecardmarker: Can be used to draw the negative point marker of the adventures extension (usage: ```\negativecardmarker```).
+- negativecardmarker( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/negativecardmarker.png?raw=true" width="16"> 
+): Can be used to draw the negative point marker of the adventures extension (usage: ```\negativecardmarker```). 
 
-- negativecoinmarker: Can be used to draw the negative coin marker of the adventures extension (usage: ```\negativecoinmarker```).
+- negativecoinmarker( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/negativecoinmarker.png?raw=true" width="16"> 
+): Can be used to draw the negative coin marker of the adventures extension (usage: ```\negativecoinmarker```). 
 
 ## The card commands
 
