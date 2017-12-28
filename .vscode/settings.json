@@ -55,8 +55,11 @@
         "grosse",
         "grossen",
         "helvet",
+        "iconheight",
         "iconwidth",
+        "ifthenelse",
         "includegraphics",
+        "isempty",
         "itemindent",
         "itemsep",
         "kultisten",
@@ -103,6 +106,7 @@
         "victorypointtoken",
         "whitegold",
         "whitegreen",
-        "xcolor"
+        "xcolor",
+        "xifthen"
     ]
 }
