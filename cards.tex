@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{rotating}
 \usepackage[babel,german=quotes]{csquotes}
+\usepackage{xifthen}
 
 % Colors for basic elements
 \definecolor{framebg}{RGB}{0,0,0}
@@ -69,13 +70,19 @@
 \setlist[itemize]{leftmargin=2em, itemsep=-1em, topsep=1em}
 
 % Shortcuts for often used icons
-\newcommand{\coin}[1]{\includegraphics[height=1em]{banner/coin.png}\hspace{-0.7em}\raisebox{0.25em}{\tiny{#1}}\hspace{0.4em}}
-\newcommand{\hex}[1]{\includegraphics[height=1em]{banner/hex.png}\hspace{-0.75em}\raisebox{0.25em}{\tiny{\textcolor{white}{#1}}}\hspace{0.3em}}
-\newcommand{\victorypointtoken}[1]{\includegraphics[height=1em]{banner/victorypointtoken.png}\hspace{-0.65em}\raisebox{0.25em}{\tiny{\textcolor{white}{#1}}}\hspace{0.3em}}
-\newcommand{\victorypoint}{\includegraphics[height=1em]{banner/victorypoint.png}\hspace{0.2em}}
-\newcommand{\potion}{\includegraphics[height=1em]{banner/potion.png}}
-\newcommand{\negativecardmarker}{\includegraphics[height=1em]{banner/negativecardmarker.png}}
-\newcommand{\negativecoinmarker}{\includegraphics[height=1em]{banner/negativecoinmarker.png}}
+\newcommand{\coin}[1][]{\raisebox{-0.25em}{\includegraphics[height=1em]{icons/coin.png}}%
+	\ifthenelse{\isempty{#1}}%
+	{\hspace{0.1em}}%
+	{\hspace{-0.75em}\raisebox{0}{\tiny{#1}}\hspace{0.3em}}}
+\newcommand{\hex}[1][]{\raisebox{-0.25em}{\includegraphics[height=1em]{icons/hex.png}}%
+	\ifthenelse{\isempty{#1}}%
+	{\hspace{0.2em}}%
+	{\hspace{-0.8em}\raisebox{0}{\tiny{\textcolor{white}{#1}}}\hspace{0.3em}}}
+\newcommand{\victorypointtoken}{\includegraphics[height=1em]{icons/victorypointtoken.png}}
+\newcommand{\victorypoint}{\includegraphics[height=1em]{icons/victorypoint.png}\hspace{0.1em}}
+\newcommand{\potion}{\includegraphics[height=1em]{icons/potion.png}\hspace{0.1em}}
+\newcommand{\negativecardmarker}{\includegraphics[height=1em]{icons/negativecardmarker.png}}
+\newcommand{\negativecoinmarker}{\includegraphics[height=1em]{icons/negativecoinmarker.png}}
 
 % Draw cards in portrait format
 \input{format/tikzcardsportrait.tex}
@@ -97,29 +104,26 @@
 		\end{minipage}
 	    	
 	    \input{sets/de/basecards.tex}
-	    \input{sets/de/basic1.tex}
+	    \input{sets/de/basic1HIG2008.tex}
 		\input{sets/de/basic1SpecialEditionRGG2013.tex}
 		\input{sets/de/basecards.tex}
 		\input{sets/de/basic2RGG2017.tex}
-		\input{sets/de/intrigue.tex}
+		\input{sets/de/intrigueHIG2009.tex}
 	    \input{sets/de/intrigueRGG2014.tex}
-	    \input{sets/de/seaside.tex}
+	    \input{sets/de/seasideHIG2009.tex}
 	    \input{sets/de/seasideRGG2014.tex}
-	    \input{sets/de/alchemy.tex}
+	    \input{sets/de/alchemyHIG2010.tex}
 		\input{sets/de/alchemyRGG2015.tex}
-	    \input{sets/de/prosperity.tex}
+	    \input{sets/de/prosperityHIG2010.tex}
 	    \input{sets/de/prosperityRGG2016.tex}
-	    \input{sets/de/cornucopia.tex}
+	    \input{sets/de/cornucopiaHIG2011.tex}
 	    \input{sets/de/cornucopiaRGG2014.tex}
-	    \input{sets/de/hinterlands.tex}
-	    \input{sets/de/darkages.tex}
-	    \input{sets/de/guilds.tex}
+	    \input{sets/de/hinterlandsHIG2011.tex}
+	    \input{sets/de/darkagesHIG2012.tex}
 	    \input{sets/de/guildsRGG2013.tex}
-	    \input{sets/de/adventures.tex}
 	    \input{sets/de/adventuresRGG2015.tex}
-	    \input{sets/de/empires.tex}
 	    \input{sets/de/empiresRGG2016.tex}
-	    \input{sets/de/nocturne.tex}
+		\input{sets/de/nocturneRGG2018.tex}
 	    \input{sets/de/promotion.tex}
 	    \input{sets/de/template.tex}
 	\end{center}
