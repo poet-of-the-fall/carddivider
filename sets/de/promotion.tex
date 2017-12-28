@@ -11,7 +11,7 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{4}
 	\cardtitle{Gesandter}
 	\cardcontent{Die aufgedeckten Karten legst du zunächst offen vor dir aus. Kannst du auch nach dem Mischen deines Ablagestapels nur weniger als 5 Karten aufdecken, deckst du nur so viele auf, wie möglich. Dann wählt der Spieler links von dir eine dieser offenen Karten. Die gewählte Karte legst du auf deinen Ablagestapel, die restlichen Karten nimmst du auf die Hand.}
@@ -21,7 +21,7 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{3}
 	\cardtitle{\footnotesize{Schwarzmarkt}}
 	\cardcontent{\miniscule{\begin{Spacing}{1}
@@ -44,7 +44,7 @@
 
 	\medskip
 
-	Wenn du den Schwarzmarkt ausspielst, aber keine Karte kaufen willst oder kannst (z.B. weil der Schwarzmarktstapel leer ist oder du nicht genügend Geld hast), erhältst du trotzdem +\coin{2} für die Kaufphase.
+	Wenn du den Schwarzmarkt ausspielst, aber keine Karte kaufen willst oder kannst (z.B. weil der Schwarzmarktstapel leer ist oder du nicht genügend Geld hast), erhältst du trotzdem +\coin[2] für die Kaufphase.
 	\end{Spacing}}}
 \end{tikzpicture}
 \hspace{-0.6cm}
@@ -52,10 +52,10 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/gold.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{5}
 	\cardtitle{Geldversteck}
-	\cardcontent{Das Geldversteck ist eine Geldkarte mit dem Wert \coin{2}, wie ein Silber. In der Aufräumphase wird das Geldversteck wie üblich abgelegt. Immer wenn ein Spieler seinen Ablagestapel mischt, führt er folgende Schritte aus:
+	\cardcontent{Das Geldversteck ist eine Geldkarte mit dem Wert \coin[2], wie ein Silber. In der Aufräumphase wird das Geldversteck wie üblich abgelegt. Immer wenn ein Spieler seinen Ablagestapel mischt, führt er folgende Schritte aus:
 	\begin{noindlist}
 	\item Er sucht zunächst alle Geldversteck-Karten aus seinem Ablagestapel und legt sie beiseite.
 	\item Dann mischt er die verbliebenen Karten des Ablagestapels.
@@ -68,7 +68,7 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{4}
 	\cardtitle{Carcasonne}
 	\cardcontent{\emph{Errata:} Der Kartentext ist falsch, es sollte \enquote{Wenn du zu Beginn deiner Aufräumphase nicht mehr als eine weitere Aktionskarte im Spiel hast\dots} statt \enquote{Wenn du zu Beginn deiner Aufräumphase nur noch eine weitere Aktionskarte im Spiel hast\dots} heißen.
@@ -82,7 +82,7 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{5}
 	\cardtitle{Gouverneur}
 	\cardcontent{Zuerst erhältst du +1 Aktion. Dann wählst du eine der folgenden Optionen:
@@ -90,7 +90,7 @@
 	\item Du ziehst 3 Karten und jeder andere Spieler zieht 1 Karte.
 	\item Du nimmst dir 1 Gold und jeder andere Spieler nimmt sich 1 Silber.
 	\item Du darfst 1 Karte aus deiner Hand entsorgen und nimmst dir 1 Karte, die genau
-	\coin{2} mehr kostet als die entsorgte Karte und jeder andere Spieler darf 1 Karte entsorgen, die genau \coin{1} mehr kostet als die entsorgte Karte.
+	\coin[2] mehr kostet als die entsorgte Karte und jeder andere Spieler darf 1 Karte entsorgen, die genau \coin[1] mehr kostet als die entsorgte Karte.
 	\end{noindlist}
 	Geh nach der Reihenfolge, beginnend mit dir selbst. Die Karten werden vom Vorrat genommen und auf den Ablagestapel gelegt. Sind im Vorrat keine Karten mehr übrig, können keine entsprechenden Karten genommen werden. Wählst du z.B. die zweite Option und es ist nur noch 1 Silber im Vorrat, bekommt es der Spieler links von dir und die anderen Spieler erhalten nichts. Bei der dritten Option nimmst du dir nur dann 1 Karte, wenn du vorher 1 Karte entsorgt hast und wenn 1 Karte mit den genauen geforderten Kosten im Vorrat verfügbar ist. Wenn du 1 Karte entsorgst, musst du dir 1 Karte nehmen, sofern möglich. Du kannst den ausgespielten Gouverneur nicht entsorgen, da er sich nicht mehr auf deiner Hand befindet. Du kannst aber einen anderen Gouverneur aus deiner Hand entsorgen.}
 \end{tikzpicture}
@@ -99,16 +99,16 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{8}
 	\cardtitle{Prinz}
 	\cardcontent{\tiny{\begin{Spacing}{1}
 	\vspace{1em}
-	Wenn du dich entscheidest, einen Prinzen zu spielen, legst du ihn sofort zur Seite. Er befindet sich damit allerdings nicht im Spiel. Anschließend wählst du eine Aktionskarte von deiner Hand, die zu diesem Zeitpunkt maximal \coin{4} kostet und legst diese ebenfalls zur Seite.
+	Wenn du dich entscheidest, einen Prinzen zu spielen, legst du ihn sofort zur Seite. Er befindet sich damit allerdings nicht im Spiel. Anschließend wählst du eine Aktionskarte von deiner Hand, die zu diesem Zeitpunkt maximal \coin[4] kostet und legst diese ebenfalls zur Seite.
 
 	\medskip
 
-	Auch Karten mit Kosten von \coin{0}, wie die Preiskarten aus Reiche Ernte sowie Karten mit Kosten von \coin{X} + aus Die Gilden dürfen mit Hilfe des Prinzen zur Seite gelegt werden. Karten, deren Kosten einen Trank enthalten, dürfen dagegen nicht zur Seite gelegt werden.
+	Auch Karten mit Kosten von \coin[0], wie die Preiskarten aus Reiche Ernte sowie Karten mit Kosten von \coin[X] + aus Die Gilden dürfen mit Hilfe des Prinzen zur Seite gelegt werden. Karten, deren Kosten einen Trank enthalten, dürfen dagegen nicht zur Seite gelegt werden.
 
 	\medskip
 
@@ -136,7 +136,7 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{4}
 	\cardtitle{Sauna}
 	\cardcontent{\tiny{\begin{Spacing}{1}
@@ -165,7 +165,7 @@
 \card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{5}
 	\cardtitle{Eisloch}
 	\cardcontent{Wenn du das Eisloch ausspielst, ziehst du zuerst 3 Karten. Du kannst dann sofort eine Sauna aus deiner Hand ausspielen. Das verbraucht keine deiner Aktionen, und du erhältst trotzdem die +1 Aktion der Sauna, wenn du sie auf diese Weise spielst.
@@ -194,7 +194,7 @@
 	\cardtitle{Ereignisse\qquad}
 	\cardcontent{\tiny{\begin{Spacing}{1}
 	\vspace{1em}
-	\emph{Einladung:} Wenn du das Ereignis kaufst, nimmst du dir vom Vorrat eine Aktionskarte, die bis zu \coin{4} kostet und legst sie offen zur Seite. Wenn du sie beiseite gelegt hast, dann spielst du die Aktionskarte zu Beginn des nächsten Zuges aus. Das Ausspielen verbraucht nicht deine Standardaktion für den Zug. Um dich daran zu erinnern, dass du die Karte in deinem nächsten Zug ausspielst, kannst du sie seitwärts oder diagonal drehen, und sie dann richtig herum drehen, sobald du sie ausspielst.
+	\emph{Einladung:} Wenn du das Ereignis kaufst, nimmst du dir vom Vorrat eine Aktionskarte, die bis zu \coin[4] kostet und legst sie offen zur Seite. Wenn du sie beiseite gelegt hast, dann spielst du die Aktionskarte zu Beginn des nächsten Zuges aus. Das Ausspielen verbraucht nicht deine Standardaktion für den Zug. Um dich daran zu erinnern, dass du die Karte in deinem nächsten Zug ausspielst, kannst du sie seitwärts oder diagonal drehen, und sie dann richtig herum drehen, sobald du sie ausspielst.
 
 	\medskip
 
@@ -214,7 +214,7 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{5}
 	\cardtitle{Höflinge}
 	\cardcontent{}
@@ -224,7 +224,7 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardicon{banner/coin.png}
+	\cardicon{icons/coin.png}
 	\cardprice{4}
 	\cardtitle{Abbruch}
 	\cardcontent{}
