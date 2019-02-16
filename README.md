@@ -6,6 +6,8 @@ It is based on the works of Eiko Wagenknecht ([visit his website](http://www.phe
 
 To compile the card dividers you need a Latex distribution. To read more about this, you can start [here](https://www.latex-project.org/get/#distributions).
 
+You will also need to download the TrajanPro font. See these two links: [Regular](http://fontsgeek.com/fonts/Trajan-Pro-Regular), [Bold](http://fontsgeek.com/fonts/Trajan-Pro-Bold)
+
 **Feel free to add further card sets, editions, languages or formats or correct some errors or typos. To do so fork the project and open a pull request or use the issues section if you aren't familiar with LaTex and/or Github.**
 
 ## Compiling the PDFs
