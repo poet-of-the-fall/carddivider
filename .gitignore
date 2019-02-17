@@ -4,4 +4,5 @@
 *.toc
 *.fdb_latexmk
 *.fls
+*.synctex(busy)
 cards.pdf
