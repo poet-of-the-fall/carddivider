@@ -1,21 +1,32 @@
 % Basic settings for this card set
 \renewcommand{\cardcolor}{intrigue}
-\renewcommand{\cardextension}{Erweiterung}
+\renewcommand{\cardextension}{Edition II}
 \renewcommand{\cardextensiontitle}{Die Intrige}
 \renewcommand{\seticon}{intrigue1.png}
 
 \clearpage
 \newpage
-\section{\cardextension \ - \cardextensiontitle \ (Hans Im Glück 2009)}
+\section{\cardextension \ - \cardextensiontitle \ (Hans im Glück 2009)}
+
 
 \begin{tikzpicture}
 	\card
 	\cardstrip
-	\cardbanner{banner/whitegreen.png}
+	\cardbanner{banner/white.png}
 	\cardicon{icons/coin.png}
-	\cardprice{6}
-	\cardtitle{Adelige}
-	\cardcontent{Diese Karte ist \emph{zugleich} eine Aktions- und eine Punktekarte. Wenn du sie ausspielst, kannst du wählen, 3 Karten nachzuziehen \emph{oder} 2 zusätzliche Aktionen zu erhalten. Die beiden Anweisungen können jedoch nicht geteilt und gemischt werden. Bei Spielende sind die Adeligen 2 Punkte wert. Im Spiel zu 3. und zu 4. werden 12 Karten verwendet, im Spiel zu 2. werden 8 Karten verwendet.}
+	\cardprice{2}
+	\cardtitle{Burghof}
+	\cardcontent{Du ziehst 3 Karten und nimmst diese auf die Hand bevor du eine Karte auf den Nachziehstapel legst. Die Karte, die du auf den Nachziehstapel legst, muss keine der 3 gerade gezogenen Karten sein.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/blue.png}
+	\cardicon{icons/coin.png}
+	\cardprice{2}
+	\cardtitle{\footnotesize{Geheimkammer}}
+	\cardcontent{Wenn du die Geheimkammer in deinem Zug ausspielst, legst du zuerst eine beliebige Anzahl Handkarten ab. Du erhältst dann +1 virtuelles Geld für jede abgelegte Karte. Du darfst auch 0 Karten ablegen. Die andere Anweisung auf der Karte tritt nur in Kraft, wenn du sie als Reaktion auf einen Angriff aus deiner Hand aufdeckst. Wenn du das machst, ziehst du zuerst 2 Karten nach und legst dann 2 Karten aus deiner Hand auf den Nachziehstapel. Du kannst 2 beliebige deiner Handkarten auf den Nachziehstapel legen, nicht notwendigerweise die gerade gezogenen. Du kannst auch die Geheimkammer selbst auf den Nachziehstapel legen. Du kannst die Geheimkammer immer aufdecken, wenn ein anderer Spieler einen Angriff ausspielt, auch wenn dich der Angriff nicht betrifft. Du kannst auch mehrere Reaktionskarten bei einem Angriff aufdecken. Du kannst z.B. zuerst die Geheimkammer aufdecken und abwickeln und danach den Angriff mit dem Burggraben abwehren. Die Geheimkammer selbst wehrt einen Angriff nicht ab.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -23,9 +34,9 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardicon{icons/coin.png}
-	\cardprice{5}
-	\cardtitle{Anbau}
-	\cardcontent{Du ziehst zuerst eine Karte. Danach \emph{musst} du eine Karte aus deiner Hand entsorgen und dann eine Karte nehmen, die genau 1 Geld mehr kostet als die entsorgte Karte. Ist keine solche Karte im Vorrat, erhältst du keine Karte, musst jedoch trotzdem eine entsorgen. Wenn du keine Karte zum Entsorgen hast, entsorgst du keine und nimmst dir keine Karte.}
+	\cardprice{2}
+	\cardtitle{Handlanger}
+	\cardcontent{Wähle 2 verschiedene Anweisungen. Du darfst nicht eine Anweisung zweimal wählen. Du musst zuerst beide Anweisungen auswählen und sie dann erst (in jeder möglichen Reihenfolge) ausführen. Du kannst nicht eine Karte nachziehen und dann erst die zweite Anweisung wählen.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -41,11 +52,51 @@
 \begin{tikzpicture}
 	\card
 	\cardstrip
+	\cardbanner{banner/whitegreen.png}
+	\cardicon{icons/coin.png}
+	\cardprice{3}
+	\cardtitle{Grosse Halle}
+	\cardcontent{Diese Karte ist /emph{zugleich} eine Aktions- und eine Punktekarte. Wenn du sie ausspielst, ziehst du sofort eine Karte nach und darfst dann eine weitere Aktionskarte ausspielen. Bei Spielende ist die Karte 1 Punkt wert, wie ein Anwesen. Im Spiel zu 3. und zu 4. werden 12 Karten verwendet, im Spiel zu 2. werden 8 Karten verwendet.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardicon{icons/coin.png}
-	\cardprice{5}
-	\cardtitle{Austausch}
-	\cardcontent{Entsorge zuerst eine Karte aus deiner Hand. Dann nimmst du dir eine Karte vom Vorrat, die maximal 2 mehr kostet als die entsorgte Karte. Eine Karte kostet nur dann maximal 2 mehr, wenn die restlichen Kosten (z. B. TRANK aus Empires oder SCHULDEN aus Alchemie) gleich oder niedriger sind. Wenn die genommene Karte eine Aktions- und/oder Geldkarte ist, legst du die Karte oben auf deinen Nachziehstapel. Ansonsten legst du die Karte auf den Ablagestapel. Ist die genommene Karte eine Punktekarte, nimmt sich jeder Mitspieler – beginnend bei deinem linken Mitspieler – einen Fluch. Ist die genommene Karte eine Punktekarte sowie eine Aktions- oder Geldkarte (z. B. MÜHLE), legst du die Karte oben auf deinen Nachziehstapel und jeder Mitspieler muss sich einen Fluch nehmen.}
+	\cardprice{3}
+	\cardtitle{Maskerade}
+	\cardcontent{Du ziehst zuerst 2 Karten. Dann wählen alle Spieler gleichzeitig eine Karte aus ihrer Hand und legen diese verdeckt zwischen sich und den Spieler zu ihrer Linken. Erst dann nehmen alle Spieler die Karten, die sie vom Spieler rechts bekommen haben auf. Die Spieler wählen also zuerst, welche Karte sie weiter geben, bevor sie sehen, welche Karte sie bekommen. Am Ende darfst nur du eine Karte aus deiner Hand entsorgen. Die Maskerade ist kein Angriff. Die übrigen Spieler dürfen also keine Reaktionskarten aus ihrer Hand vorzeigen um sich zu schützen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{icons/coin.png}
+	\cardprice{3}
+	\cardtitle{Trickser}
+	\cardcontent{Jeder Mitspieler, beginnend mit dem Spieler links vom Angreifer, muss die oberste Karte von seinem Nachziehstapel aufdecken. Er muss diese Karte entsorgen und du wählst eine Karte aus dem Vorrat, die das gleiche kostet. Diese Karte nimmt sich der Spieler und legt sie bei sich ab. Ist im Vorrat keine Karte, mit den gleichen Kosten, erhält der Spieler nichts, muss jedoch die Karte trotzdem entsorgen. Entsorgt er z. B. ein Kupfer, kannst du einen Fluch auswählen, den er nehmen muss. Du kannst auch die selbe Karte wählen, die er entsorgt hat. Die gewählte Karte muss im Vorrat zur Verfügung stehen. Du kannst also keine Karte aus einem leeren Stapel oder vom Müll wählen. Sind keine Karten mehr im Vorrat, die genau so viel kosten, wie die entsorgte Karte, erhält der Spieler nichts. Deckt ein Spieler den Burggraben aus seiner Hand auf, muss er keine Karte vom Nachziehstapel aufdecken und entsorgen und erhält auch keine Karte.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{icons/coin.png}
+	\cardprice{3}
+	\cardtitle{Verwalter}
+	\cardcontent{Wenn du dich entscheidest, 2 Karten zu entsorgen und 2 oder mehr Karten auf der Hand hast, musst du genau 2 Karten entsorgen. Wenn du dich entscheidest, 2 Karten zu entsorgen, aber aber nur 1 Karte auf der Hand hast musst du diese Karte entsorgen. Du kannst die verschiedenen Anweisungen nicht mischen, du musst wählen: \emph{entweder} +2 Karten \emph{oder} +2 Geld \emph{oder} 2 Karten entsorgen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{icons/coin.png}
+	\cardprice{3}
+	\cardtitle{\scriptsize{Wunschbrunnen}}
+	\cardcontent{Du ziehst zuerst eine Karte nach. Dann benennst du eine Karte (z. B. \enquote{Kupfer}, nicht \enquote{Geld}) und deckst die oberste Karte von deinem Nachziehstapel auf. Wenn es sich um die benannte Karte handelt, nimmst du sie auf die Hand. Wenn nicht, legst du sie zurück auf den Nachziehstapel.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -83,26 +134,6 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardicon{icons/coin.png}
-	\cardprice{2}
-	\cardtitle{Burghof}
-	\cardcontent{Du ziehst 3 Karten und nimmst diese auf die Hand bevor du eine Karte auf den Nachziehstapel legst. Die Karte, die du auf den Nachziehstapel legst, muss keine der 3 gerade gezogenen Karten sein.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/blue.png}
-	\cardicon{icons/coin.png}
-	\cardprice{4}
-	\cardtitle{Diplomatin}
-	\cardcontent{Diese Karte ist eine Aktions- und Reaktionskarte. Wird sie als Aktion in der Aktionsphase ausgespielt, nimmst du 2 Karten. Hast du dann 5 oder weniger Karten auf der Hand, erhältst du außerdem + 2 Aktionen. Spielt ein Mitspieler eine Angriffskarte aus und du hast zu diesem Zeitpunkt 5 oder mehr Karten auf der Hand, darfst du diese Karte – bevor der ausgespielte Angriff ausgeführt wird – aus der Hand aufdecken. Wenn du das tust, nimmst du diese DIPLOMATIN wieder auf die Hand, ziehst 2 Karten und legst dann 3 Karten (auch möglich inklusive dieser DIPLOMATIN) ab. Hast du dann immer noch 5 oder mehr Karten sowie eine DIPLOMATIN auf der Hand, darfst du die DIPLOMATIN noch einmal aufdecken – und dies so oft wiederholen wie du möchtest und die Bedingung der 5 oder mehr Karten auf der Hand erfüllt ist. Erst dann wird der Angriff ausgeführt. Hast du mehrere Reaktionskarten auf der Hand, mit denen du auf das Ausspielen einer Angriffskarte reagieren kannst, darfst du diese nacheinander in beliebiger Reihenfolge aufdecken.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardicon{icons/coin.png}
 	\cardprice{4}
 	\cardtitle{Eisenhütte}
 	\cardcontent{Du nimmst dir eine Karte vom Vorrat und legst sie auf deinen Ablagestapel. Je nach Kartentyp der genommenen Karte erhältst du einen Bonus. Nimmst du eine Karte mit kombiniertem Kartentyp, z. B. Große Halle erhältst du +1 Aktion (weil die Große Halle eine Aktionskarte ist) und +1 Karte (weil die Große Halle auch eine Punktekarte ist).}
@@ -114,8 +145,39 @@
 	\cardbanner{banner/white.png}
 	\cardicon{icons/coin.png}
 	\cardprice{4}
-	\cardtitle{Geheimgang}
-	\cardcontent{Du ziehst 2 Karten und erhältst + 1 Aktion. Dann nimmst du eine beliebige Karte aus deiner Hand (auch ggf. eine, die du gerade gezogen hast) und legst sie an eine beliebige Stelle in deinen Nachziehstapel. Du darfst sie oben drauf, unten drunter oder irgendwo in die Mitte legen. Du darfst dabei die Karten deines Nachziehstapels zählen, aber nicht ansehen. Befinden sich keine Karten in deinem Nachziehstapel, wird die zurückgelegte Karte zur einzigen Karte in deinem Nachziehstapel.}
+	\cardtitle{\footnotesize{Kupferschmied}}
+	\cardcontent{Diese Karte verändert, wieviel Geld ein Kupfer einbringt. Der Effekt ins kumulativ, wenn du den Kupferschmied auf einen Thronsaal spielst, bringt jedes Kupfer 3 Geld.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{icons/coin.png}
+	\cardprice{4}
+	\cardtitle{Späher}
+	\cardcontent{Wenn der Nachziehstapel leer ist und du deinen Nachziehstapel mischt, werden
+	die bereits aufgedeckten Karten nicht mit eingemischt. Du musst alle Punktekarten auf die Hand nehmen. Kombinierte Aktions-/Punktekarten sind auch Punktekarten. Fluchkarten sind keine Punktekarten. Du musst die Reihenfolge, in der du die Karten auf den Nachziehstapel legst nicht zeigen.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{icons/coin.png}
+	\cardprice{4}
+	\cardtitle{Verschwörer}
+	\cardcontent{Du überprüfst die Bedingung ob du +1 Karte und +1 Aktion erhältst wenn du den Verschwörer ausgespielt hast. Wenn die Bedingung später im Zug erfüllt wird, überprüfst du die Bedingung nicht rückwirkend. Wird eine Karte auf den Thronsaal gespielt, zählt der Thronsaal selbst als gespielte Aktionskarte und die darauf gespielte Aktionskarte zusätzlich zweimal als gespielte Aktionskarte. Wenn du z. B. den Verschwörer auf den Thronsaal spielst, ist der Thronsaal die erste Aktionskarte, der zuerst ausgespielte Verschwörer ist die zweite Aktionskarte (du erhältst also keine +1 Karte und keine +1 Aktion). Wenn du den Verschwörer zum zweiten mal ausspielst, hast du 3 Aktionskarten ausgespielt und erhältst +1 Karte und +1 Aktion.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardicon{icons/coin.png}
+	\cardprice{5}
+	\cardtitle{Anbau}
+	\cardcontent{Du ziehst zuerst eine Karte. Danach \emph{musst} du eine Karte aus deiner Hand entsorgen und dann eine Karte nehmen, die genau 1 Geld mehr kostet als die entsorgte Karte. Ist keine solche Karte im Vorrat, erhältst du keine Karte, musst jedoch trotzdem eine entsorgen. Wenn du keine Karte zum Entsorgen hast, entsorgst du keine und nimmst dir keine Karte.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -131,51 +193,11 @@
 \begin{tikzpicture}
 	\card
 	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardicon{icons/coin.png}
-	\cardprice{2}
-	\cardtitle{Handlanger}
-	\cardcontent{Wähle 2 verschiedene Anweisungen. Du darfst nicht eine Anweisung zweimal wählen. Du musst zuerst beide Anweisungen auswählen und sie dann erst (in jeder möglichen Reihenfolge) ausführen. Du kannst nicht eine Karte nachziehen und dann erst die zweite Anweisung wählen.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/goldgreen.png}
-	\cardicon{icons/coin.png}
-	\cardprice{6}
-	\cardtitle{Harem}
-	\cardcontent{Diese Karte ist zugleich eine Geld- und eine Punktekarte. Du kannst sie in der Kaufphase spielen, genau wie ein Silber. Bei Spielende ist der Harem 2 Punkte wert. Im Spiel zu 3. und zu 4. werden 12 Karten verwendet, im Spiel zu 2. werden 8 Karten verwendet.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardicon{icons/coin.png}
-	\cardprice{2}
-	\cardtitle{\scriptsize{Herumtreiberin}}
-	\cardcontent{Die Karte, die du entsorgst oder vom Müllstapel nimmst, muss den Typ AKTION beinhalten, d. h. sie kann auch eine kombinierte Aktionskarte (z. B. MÜHLE) sein. Genommene Karten werden auf den Ablagestapel gelegt – es sei denn, auf der Karte steht etwas anderes. Wird eine Karte entsorgt, die einen speziellen Effekt beim Entsorgen hat, tritt dieser ein.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
 	\cardbanner{banner/green.png}
 	\cardicon{icons/coin.png}
 	\cardprice{5}
 	\cardtitle{Herzog}
 	\cardcontent{Diese Karte hat bis zum Ende des Spiels keine Funktion. Bei Spielende ist der Herzog 1 Punkt pro Herzogtum in Handkarten, Nachziehstapel und Ablagestapel wert. Im Spiel zu 3. und zu 4. werden 12 Karten verwendet, im Spiel zu 2. werden 8 Karten verwendet.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardicon{icons/coin.png}
-	\cardprice{5}
-	\cardtitle{Höflinge}
-	\cardcontent{Decke eine Karte aus deiner Hand auf. Zähle dann die Typen, denen diese Karte angehört – also AKTION, GELD, REAKTION, ANGRIFF, PUNKTE, FLUCH etc. Pro Typ, dem die Karte angehört, entscheidest du dich für eine der vier angegebenen Optionen. Dabei darfst du keine der Optionen doppelt auswählen. Wenn du zum Beispiel eine PATROUILLE (AKTION) aufdeckst, darfst du eine Option auswählen, deckst du einen KARAWANENWÄCHTER aus Abenteuer (AKTION – DAUER – REAKTION) auf, darfst du 3 unterschiedliche Optionen wählen. Entscheidest du dich für das Gold, legst du dieses auf den Ablagestapel. Kannst du keine Handkarte aufdecken, erhältst du nichts.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -203,19 +225,9 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardicon{icons/coin.png}
-	\cardprice{3}
-	\cardtitle{Maskerade}
-	\cardcontent{Du ziehst zuerst 2 Karten. Dann wählen alle Spieler gleichzeitig eine Karte aus ihrer Hand und legen diese verdeckt zwischen sich und den Spieler zu ihrer Linken. Erst dann nehmen alle Spieler die Karten, die sie vom Spieler rechts bekommen haben auf. Die Spieler wählen also zuerst, welche Karte sie weiter geben, bevor sie sehen, welche Karte sie bekommen. Am Ende darfst nur du eine Karte aus deiner Hand entsorgen. Die Maskerade ist kein Angriff. Die übrigen Spieler dürfen also keine Reaktionskarten aus ihrer Hand vorzeigen um sich zu schützen.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/whitegreen.png}
-	\cardicon{icons/coin.png}
-	\cardprice{4}
-	\cardtitle{Mühle}
-	\cardcontent{Diese Karte ist eine kombinierte Aktions- und Punktekarte. Als Punktekarte bringt sie beim Zählen der Punkte 1. Spielst du die MÜHLE als Aktionskarte aus, ziehst du 1 Karte und erhältst + 1 Aktion. Du darfst 2 Karten aus deiner Hand ablegen. Wenn du das tust, erhältst du + 2 . Tust du das nicht (weil du zum Beispiel nicht genügend Karten auf der Hand hast), erhältst du nichts. Nur, wenn du nicht mehr als eine Karte auf der Hand hast, darfst du genau eine Karte ablegen, erhältst dafür aber kein GELD.}
+	\cardprice{5}
+	\cardtitle{Saboteur}
+	\cardcontent{Jeder Mitspieler, beginnend mit dem Spieler links vom Angreifer, muss solange Karten von seinem Nachziehstapel aufdecken, bis er eine Karte aufdeckt, die 3 Geld oder mehr kostet. Wenn der Nachziehstapel leer ist, mischt er die bereits aufgedeckten Karten nicht mit ein. Wenn er eine Karte aufdeckt, die 3 Geld oder mehr kostet, muss er diese entsorgen und darf sich dann eine Karte aus dem Vorrat nehmen, die 2 Geld weniger kostet oder billiger ist. Die übrigen aufgedeckten Karten legt er ab. Findet er keine Karte, die 3 Geld oder mehr kostet, legt er seine aufgedeckten Karten ab und nichts weiter passiert.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -224,48 +236,28 @@
 	\cardbanner{banner/white.png}
 	\cardicon{icons/coin.png}
 	\cardprice{5}
-	\cardtitle{Patrouille}
-	\cardcontent{Ziehe zuerst 3 Karten. Decke dann die obersten 4 Karten deines Nachziehstapels auf. So aufgedeckte Punktekarten (auch ggf. kombinierte) und Flüche nimmst du alle auf die Hand. Die restlichen Karten legst du in beliebiger Reihenfolge zurück auf den Nachziehstapel.}
+	\cardtitle{Tribut}
+	\cardcontent{Wenn sein Nachziehstapel leer ist, mischt der Spieler links von dir die bereits aufgedeckte Karte nicht mit ein. Dann legt er die Karten ab. Hat er weniger als 2 Karten in Nachzieh- und Ablagestapel, deckt er nur so viele auf, wie er hat. Du erhältst Boni für die Kartentypen und nur für unterschiedliche Karten. Wenn der Spieler z.B. ein Kupfer und einen Harem aufdeckt, bekommst du +4 Geld und +2 Karten. Wenn er 2 Silber aufdeckt bekommst du +2 Geld.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
 	\card
 	\cardstrip
-	\cardbanner{banner/white.png}
+	\cardbanner{banner/whitegreen.png}
 	\cardicon{icons/coin.png}
-	\cardprice{3}
-	\cardtitle{Trickser}
-	\cardcontent{Jeder Mitspieler, beginnend mit dem Spieler links vom Angreifer, muss die oberste Karte von seinem Nachziehstapel aufdecken. Er muss diese Karte entsorgen und du wählst eine Karte aus dem Vorrat, die das gleiche kostet. Diese Karte nimmt sich der Spieler und legt sie bei sich ab. Ist im Vorrat keine Karte, mit den gleichen Kosten, erhält der Spieler nichts, muss jedoch die Karte trotzdem entsorgen. Entsorgt er z. B. ein Kupfer, kannst du einen Fluch auswählen, den er nehmen muss. Du kannst auch die selbe Karte wählen, die er entsorgt hat. Die gewählte Karte muss im Vorrat zur Verfügung stehen. Du kannst also keine Karte aus einem leeren Stapel oder vom Müll wählen. Sind keine Karten mehr im Vorrat, die genau so viel kosten, wie die entsorgte Karte, erhält der Spieler nichts. Deckt ein Spieler den Burggraben aus seiner Hand auf, muss er keine Karte vom Nachziehstapel aufdecken und entsorgen und erhält auch keine Karte.}
+	\cardprice{6}
+	\cardtitle{Adelige}
+	\cardcontent{Diese Karte ist \emph{zugleich} eine Aktions- und eine Punktekarte. Wenn du sie ausspielst, kannst du wählen, 3 Karten nachzuziehen \emph{oder} 2 zusätzliche Aktionen zu erhalten. Die beiden Anweisungen können jedoch nicht geteilt und gemischt werden. Bei Spielende sind die Adeligen 2 Punkte wert. Im Spiel zu 3. und zu 4. werden 12 Karten verwendet, im Spiel zu 2. werden 8 Karten verwendet.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
 	\card
 	\cardstrip
-	\cardbanner{banner/white.png}
+	\cardbanner{banner/goldgreen.png}
 	\cardicon{icons/coin.png}
-	\cardprice{4}
-	\cardtitle{Verschwörer}
-	\cardcontent{Du überprüfst die Bedingung ob du +1 Karte und +1 Aktion erhältst wenn du den Verschwörer ausgespielt hast. Wenn die Bedingung später im Zug erfüllt wird, überprüfst du die Bedingung nicht rückwirkend. Wird eine Karte auf den Thronsaal gespielt, zählt der Thronsaal selbst als gespielte Aktionskarte und die darauf gespielte Aktionskarte zusätzlich zweimal als gespielte Aktionskarte. Wenn du z. B. den Verschwörer auf den Thronsaal spielst, ist der Thronsaal die erste Aktionskarte, der zuerst ausgespielte Verschwörer ist die zweite Aktionskarte (du erhältst also keine +1 Karte und keine +1 Aktion). Wenn du den Verschwörer zum zweiten mal ausspielst, hast du 3 Aktionskarten ausgespielt und erhältst +1 Karte und +1 Aktion.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardicon{icons/coin.png}
-	\cardprice{3}
-	\cardtitle{Verwalter}
-	\cardcontent{Wenn du dich entscheidest, 2 Karten zu entsorgen und 2 oder mehr Karten auf der Hand hast, musst du genau 2 Karten entsorgen. Wenn du dich entscheidest, 2 Karten zu entsorgen, aber aber nur 1 Karte auf der Hand hast musst du diese Karte entsorgen. Du kannst die verschiedenen Anweisungen nicht mischen, du musst wählen: \emph{entweder} +2 Karten \emph{oder} +2 Geld \emph{oder} 2 Karten entsorgen.}
-\end{tikzpicture}
-\hspace{-0.6cm}
-\begin{tikzpicture}
-	\card
-	\cardstrip
-	\cardbanner{banner/white.png}
-	\cardicon{icons/coin.png}
-	\cardprice{3}
-	\cardtitle{\scriptsize{Wunschbrunnen}}
-	\cardcontent{Du ziehst zuerst eine Karte nach. Dann benennst du eine Karte (z. B. \enquote{Kupfer}, nicht \enquote{Geld}) und deckst die oberste Karte von deinem Nachziehstapel auf. Wenn es sich um die benannte Karte handelt, nimmst du sie auf die Hand. Wenn nicht, legst du sie zurück auf den Nachziehstapel.}
+	\cardprice{6}
+	\cardtitle{Harem}
+	\cardcontent{Diese Karte ist zugleich eine Geld- und eine Punktekarte. Du kannst sie in der Kaufphase spielen, genau wie ein Silber. Bei Spielende ist der Harem 2 Punkte wert. Im Spiel zu 3. und zu 4. werden 12 Karten verwendet, im Spiel zu 2. werden 8 Karten verwendet.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -274,16 +266,31 @@
 	\cardbanner{banner/white.png}
 	\cardtitle{\scriptsize{Empfohlene 10er Sätze\qquad}}
 	\cardcontent{\emph{Siegestanz:}\\
-	Adlige, Austausch, Baron, Eisenhütte, Harem, Herzog, Höflinge, Maskerade, Mühle, Patrouille
+	Handlanger, Große Halle, Maskerade, Brücke, Eisenhütte, Späher, Anbau, Herzog, Adlige, Harem
 
 	\smallskip
 
-	\emph{Verschwörung:}\\
-	Bergwerk, Eisenhütte, Geheimgang, Handelsposten, Handlanger, Herumtreiberin, Kerkermeister, Trickser, Verschwörer, Verwalter 
+	\emph{Geheime Pläne:}\\
+	Handlanger, Armenviertel, Trickser, Verwalter, Eisenhütte, Verschwörer, Handelsposten, Saboteur, Tribut, Harem
 
 	\smallskip
 
 	\emph{Beste Wünsche:}\\
-	Anbau, Armenviertel, Baron, Burghof, Diplomatin, Geheimgang, Herzog, Kerkermeister, Verschwörer, Wunschbrunnen}
+	Burghof, Armenviertel, Maskerade, Verwalter, Wunschbrunnen, Kupferschmied, Späher, Anbau, Handelsposten, Kerkermeister
+
+	\smallskip
+
+	\emph{Demontage} (Intrige + \textit{Basisspiel}):\\
+	Geheimkammer, Trickser, Bergwerk, Brücke, Kerkermeister, Saboteur, \textit{Dieb}, \textit{Spion}, \textit{Thronsaal}, \textit{Umbau}
+
+	\smallskip
+
+	\emph{Eine Hand voll} (Intrige + \textit{Basisspiel}):\\
+	Burghof, Verwalter, Kerkermeister, Lakai, Adlige, \textit{Bürokrat}, \textit{Kanzler}, \textit{Miliz}, \textit{Mine}, \textit{Ratsversammlung}
+
+	\smallskip
+
+	\emph{Untergebene} (Intrige + \textit{Basisspiel}):\\
+	Handlanger, Maskerade, Verwalter, Baron, Lakai, Adlige, \textit{Bibliothek}, \textit{Hexe}, \textit{Jahrmarkt}, \textit{Keller}}
 \end{tikzpicture}
 \hspace{-0.6cm}
