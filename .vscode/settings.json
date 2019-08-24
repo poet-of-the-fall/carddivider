@@ -1,6 +1,6 @@
 {
     "cSpell.language": "en,de",
-    "latex-workshop.latex.toolchain": [
+    "latex-workshop.latex.tools": [
         {
             "command": "",
             "args": [
@@ -14,6 +14,7 @@
     ],
     "cSpell.words": [
         "alph",
+        "anwerber",
         "aufräumphase",
         "aussenposten",
         "banditin",
@@ -41,6 +42,8 @@
         "danilo",
         "darkages",
         "destry",
+        "druidin",
+        "druidinnen",
         "eiko",
         "eikos",
         "enquote",
@@ -49,6 +52,7 @@
         "fancyhdr",
         "fontspec",
         "framebg",
+        "freibeuterin",
         "gasdzik",
         "goldblue",
         "goldgreen",
@@ -66,6 +70,7 @@
         "isempty",
         "itemindent",
         "itemsep",
+        "kartentrenner",
         "kultisten",
         "labelsep",
         "labelwidth",
@@ -90,6 +95,7 @@
         "pgfmathsetlengthmacro",
         "pgfmathsetmacro",
         "promokarte",
+        "puka",
         "raisebox",
         "rightmark",
         "rotatebox",
@@ -112,6 +118,7 @@
         "tikzpicture",
         "tikzset",
         "topsep",
+        "totenbeschörer",
         "uncomment",
         "usecounter",
         "victorypoint",

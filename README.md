@@ -79,6 +79,7 @@ Further defined colors for the card sets:
 - adventures
 - empires
 - nocturne
+- renaissance
 - promo
 
 ## Shortcuts / defined commands
@@ -124,6 +125,6 @@ A card can be defined by using the following commands within the tikzpicture env
 
 - cardpriceaddition: Takes one argument and writes it as text onto the additional icon.
 
-- cardtitle: Takes one argument and writes is as text onto the card banner.
+- cardtitle: Takes one argument and writes it as text onto the card banner.
 
-- cardcontent: Takes one argument and writes is as text onto the content area.
+- cardcontent: Takes one argument and writes it as text onto the content area.
