@@ -1,6 +1,6 @@
 {
     "cSpell.language": "en,de",
-    "latex-workshop.latex.toolchain": [
+    "latex-workshop.latex.tools": [
         {
             "command": "",
             "args": [
@@ -49,6 +49,7 @@
         "fancyhdr",
         "fontspec",
         "framebg",
+        "freibeuterin",
         "gasdzik",
         "goldblue",
         "goldgreen",
