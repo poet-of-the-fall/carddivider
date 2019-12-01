@@ -218,7 +218,12 @@
 	\cardicon{icons/coin.png}
 	\cardprice{5}
 	\cardtitle{Höflinge}
-	\cardcontent{}
+	\cardcontent{
+	Decke eine Karte aus deiner Hand auf. Zähle dann die Typen, denen diese  Karte  angehört  –  also  Aktion,  Geld,  Reaktion,  Angriff,  Punkte,  Fluch  etc.  Pro  Typ,  dem  die  Karte  angehört,  entscheidest  du  dich  für  eine  der vier angegebenen Optionen. Dabei darfst du keine der Optionen doppelt auswählen. 
+	
+		\medskip
+
+	Wenn du zum Beispiel eine \emph{PATROUILLE} aus \emph{Ergänzung - Die Intrige} (Aktion) aufdeckst, darfst du eine Option auswählen, deckst du einen \emph{KARAWANENWÄCHTER} aus \emph{Abenteuer} (Aktion – Dauer – Reaktion) auf, darfst du 3 unterschiedliche Optionen wählen. Entscheidest du dich für das \emph{Gold}, legst du dieses auf den Ablagestapel. Kannst du keine Handkarte aufdecken, erhältst du nichts.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -228,6 +233,72 @@
 	\cardicon{icons/coin.png}
 	\cardprice{4}
 	\cardtitle{Abbruch}
-	\cardcontent{}
+	\cardcontent{Entsorgen ist nicht optional.
+	
+			\medskip
+			
+	Entsorgst du eine Karte, die \coin[0] kostet, oder hast du keine Karte mehr auf der Hand, die du entsorgen könntest, passiert sonst nichts. 
+
+			\medskip
+			
+	Entsorgst du eine Karte, die \coin[1] oder mehr kostet, nimmst du dir zuerst eine billigere Karte, anschließend ein \emph{GOLD}. Die Karten müssen aus dem Vorrat genommen und in der Reihenfolge, in der sie genommen wurden, auf den Ablagestapel gelegt werden, d.h. das \emph{GOLD} zuletzt. Zwar wird fast immer eine billigere Karte im Vorrat vorhanden sein, da \emph{KUPFER} und \emph{FLUCH} \coin[0] kosten, sollte dies aber einmal nicht der Fall sein, darfst du dir dennoch ein \emph{GOLD} nehmen. Sollte kein \emph{GOLD} mehr im Vorrat vorhanden sein, darfst du dir dennoch die billigere Karte nehmen. 
+
+			\medskip
+	
+	Karten, die nur Kosten in Form von \potion\ (wie die \emph{VERWANDLUNG} aus \emph{Die Alchemisten}) oder \hex\ aufweisen (wie die \emph{INGENIEURIN} aus \emph{Empires}), kosten nicht \coin[1] oder mehr.}
 \end{tikzpicture}
 \hspace{0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/orange.png}
+	\cardicon{icons/coin.png}
+	\cardprice{3}
+	\cardtitle{\scriptsize{Schweriner Dom}}
+	\cardcontent{Du kannst keine, eine, zwei oder drei Karten aus deiner Hand verdeckt zur Seite legen, darfst sie aber ansehen.
+	
+			\medskip
+			
+	Unabhängig davon, wie viele Karten du zur Seite gelegt hast, kannst du zu Beginn deines nächsten Zuges eine Karte entsorgen.
+	
+			\medskip
+			
+	Die Karte, die du entsorgst, kann eine Karte sein, die du zur Seite gelegt hast, oder eine, die du bereits auf der Hand hattest.
+	
+			\medskip
+			
+	Spielst du mehrere Male den \emph{SCHWERINER DOM} (oder einen \emph{SCHWERINER DOM} mehrfach, wie z.B. mittels \emph{THRONSAAL} aus dem \emph{Basisspiel}), darfst du entsprechend viele Sätze von jeweils bis zu drei Karten verdeckt zur Seite legen. Zu Beginn deines nächsten Zuges verfährst du folgendermaßen: Nimm dir einen Satz der zur Seite gelegten Karten auf die Hand, anschließend darfst du eine Karte entsorgen, dann wiederhole diese Schritte, bis du alle Sätze auf die Hand genommen hast. Die Reihenfolge, in der du die einzelnen Sätze auf die Hand nimmst, ist frei wählbar.}
+\end{tikzpicture}
+\hspace{0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/orange.png}
+	\cardicon{icons/coin.png}
+	\cardprice{3}
+	\cardtitle{\scriptsize{Kapitän Tobias}}
+	\cardcontent{\miniscule{\begin{Spacing}{1}
+	\vspace{1em}
+	Du wählst eine Aktionskarte aus dem Vorrat, die keine Dauerkarte und keine Befehlskarte* ist, und bis zu \coin[\miniscule{4}] kostet, spielst sie und lässt sie im Vorrat liegen. Zu Beginn deines nächsten Zuges wiederholst Du diesen Vorgang; dabei darfst du eine andere Karte auswählen, aber auch dieselbe, sofern diese noch im Vorrat vorhanden ist.
+	
+	Es kann nur eine Karte aus dem Vorrat gespielt werden, die sichtbar ist und oben auf einem Stapel liegt; weder kann eine Karte von einem leeren Stapel gespielt werden, noch eine Karte von einem gemischten Vorratsstapel, die noch nicht aufgedeckt wurde, oder bereits vergriffen ist, und auch keine Karte, die nicht zum Vorrat gehört (wie bspw.\ der \emph{SÖLDNER} aus \emph{Dark Ages}).
+	
+	Wenn es in dem Zug, in dem du \emph{KAPITÄN TOBIAS} spielst, im Vorrat keine Aktionskarte gibt, die keine Dauerkarte und keine Befehlskarte ist und bis zu \coin[\miniscule{4}] kostet, bleibt \emph{KAPITÄN TOBIAS} trotzdem im Spiel und du versuchst, zu Beginn deines nächsten Zuges eine solche Karte zu spielen.
+	
+		Wenn \emph{KAPITÄN TOBIAS} eine Karte spielt, die eine Dauerkarte spielt, beeinflusst das nicht, in welcher Runde \emph{KAPITÄN TOBIAS} aus dem Spiel genommen wird.
+	
+	\medskip
+	
+	Die gespielte Aktionskarte bleibt im Vorrat; versucht irgendein Effekt, diese Karte zu bewegen (bspw.\ die \emph{INSEL} aus \emph{Seaside}, die beim Spielen auf dein Insel-Tableau gelegt wird), wird das Bewegen nicht ausgeführt.
+	
+	\emph{KAPITÄN TOBIAS} kann eine Karte spielen, die sich selbst entsorgt, wenn sie gespielt wird; immer wenn diese Karte überprüft, ob sie entsorgt wurde (wie das \emph{BERGWERK} aus \emph{Die Intrige}), so gilt sie als nicht entsorgt; wenn sie nicht überprüft, ob sie entsorgt wurde (wie die \emph{SCHAUSPIELTRUPPE} aus \emph{Renaissance}), funktioniert sie wie gewohnt.
+		
+	Karten, die normalerweise andere Karten aus dem Vorrat bewegen, können sich selbst bewegen, wenn sie mittels \emph{KAPITÄN TOBIAS} gespielt werden; bspw.\ kann die \emph{WERKSTATT} aus dem \emph{Basisspiel} sich selbst nehmen und die \emph{Herumtreiberin} aus \emph{Ergänzung - Die Intrige} kann sich selbst entsorgen.
+	
+	Da die gespielte Karte nicht im Spiel ist, haben Fähigkeiten, die an die Bedingung "`Solange diese Karte im Spiel ist"' geknüpft sind (wie bspw.\ beim \emph{HALSABSCHNEIDER} aus \emph{Blütezeit}), keine Auswirkungen.
+	
+	\medskip
+	
+	*Befehlskarten sind ein neuer Kartentyp, der in den Errata 2019 eingeführt wurde, um zu verhindern, dass manche Fähigkeiten in Endlosschleife gespielt werden können. Befehlskarten sind Emulatoren, die Karten aus dem Vorrat spielen, sie aber dort belassen (bspw.\ \emph{VOGELFREIE} aus \emph{Dark Ages} und der \emph{LEHNSHERR} aus \emph{Empires}).
+	\end{Spacing}}}
+\end{tikzpicture}
