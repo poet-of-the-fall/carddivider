@@ -26,6 +26,8 @@ Convert the export to PNG with ImageMagick:
 magick convert -density 300x300 -verbose cards-tarot.pdf ./cards/card.png
 ```
 
+Current Cards can be shown and downloaded on my [Adobe Album](https://adobe.ly/2VE9PHV).
+
 ## Portrait, Landscape and other formats
 
 To switch between the portrait and landscape mode take a look at ```cards.tex``` in the root folder. Watch for these lines:
