@@ -7,3 +7,4 @@
 *.synctex(busy)
 cards.pdf
 .DS_Store
+cards/

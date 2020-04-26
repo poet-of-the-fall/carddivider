@@ -18,6 +18,14 @@ For this project I gave [Visual Studio Code](https://code.visualstudio.com) a tr
 
 If you only need some of the sets in your PDF just comment out the sets you don't need and compile exactly the version you need.
 
+## Tarot addition
+
+Convert the export to PNG with ImageMagick:
+
+```
+magick convert -density 300x300 -verbose cards-tarot.pdf ./cards/card.png
+```
+
 ## Portrait, Landscape and other formats
 
 To switch between the portrait and landscape mode take a look at ```cards.tex``` in the root folder. Watch for these lines:
