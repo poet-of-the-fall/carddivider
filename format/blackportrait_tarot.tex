@@ -1,0 +1,113 @@
+%   Card in portrait
+%   ---------------------------------------
+
+%   TikZ/PGF size settings for cards
+\pgfmathsetmacro{\cardwidth}{7.59cm}
+\pgfmathsetmacro{\cardheight}{12.67cm}
+\pgfmathsetlengthmacro{\bannerwidth}{3.3cm}
+\pgfmathsetlengthmacro{\iconheight}{0.5cm}
+\pgfmathsetmacro{\iconoffset}{0.175cm}
+\pgfmathsetmacro{\stripwidth}{0.2cm}
+\pgfmathsetmacro{\stripheight}{1.6cm}
+\pgfmathsetlengthmacro{\seticonheight}{0.3cm}
+\pgfmathsetmacro{\contentoffset}{0.61cm}
+\pgfmathsetmacro{\contentoffsettop}{1.6cm}
+\pgfmathsetlengthmacro{\contentwidth}{\cardwidth-\contentoffset-\contentoffset}
+\pgfmathsetlengthmacro{\contentheight}{\cardheight-\contentoffset-\contentoffsettop}
+\pgfmathsetmacro{\cardoffset}{0.4cm}
+\graphicspath{{./seticons/white/}}
+
+%   Stylings for elements
+\tikzset{
+    % Round corners for the cards
+    cardcorners/.style={
+        rounded corners=0.4cm
+    }
+}
+
+
+%   Create card with black background, white box and extension on top right
+\newcommand{\card}{
+	% Black card frame
+	\node [anchor=south west,fill=framebg,minimum width=\cardwidth,minimum height=\cardheight] (main) at (0,0) {};
+	% White content area
+	\node [anchor=south west,fill=contentbg,minimum width=\contentwidth,minimum height=\contentheight,cardcorners] (content) at ([yshift=\contentoffset,xshift=\contentoffset]0,0) {};
+	% Cardextension
+	\node [anchor=south east,\cardcolor,minimum width=\stripwidth,minimum height=0.7cm] (cardextension) at ([xshift=-1*\stripwidth,yshift=0.5*\contentoffset]content.north east) {\tiny{\trajan \cardextension}};
+	% Cardextensiontitle
+	\node [anchor=south east,\cardcolor,minimum width=\stripwidth,minimum height=0.7cm] (cardextensiontitle) at ([xshift=-1*\stripwidth]content.north east) {\tiny{\trajan \cardextensiontitle}};
+	% Set icon
+	\ifthenelse{\boolean{showSetIcon}}%
+		{\node [anchor=south east,minimum width=\seticonheight,minimum height=\seticonheight] (seticon) at ([xshift=-0.2cm,yshift=-0.3cm]cardextension.north east) {\includegraphics[height=\seticonheight]{\seticon}};}%
+		{}%
+}
+
+%   Add banner on top left
+\newcommand{\cardbanner}[1]{
+	\node [anchor=south west] (cardbanner) at ([yshift=0.2*\contentoffset]content.north west) {
+		\includegraphics[width=\bannerwidth]{#1}
+	};
+}
+
+%   Add icon to banner
+\newcommand{\cardicon}[1]{
+	\node [anchor=south west] (cardicon) at ([xshift=\iconoffset,yshift=\iconoffset]cardbanner.south west) {
+		\includegraphics[height=\iconheight]{#1}
+	};
+}
+
+%   Add price to icon
+\newcommand{\cardprice}[1]{
+	\node [] at (cardicon) {
+		\small{
+			\trajan #1
+		}
+	};
+}
+
+%   Add second icon
+\newcommand{\cardiconaddition}[1]{
+	\node [anchor=south west] (cardiconaddition) at ([xshift=\iconheight]cardicon.south west) {
+		\includegraphics[height=\iconheight]{#1}
+	};
+}
+
+%   Add price to second icon
+\newcommand{\cardpriceaddition}[1]{
+	\node [] at (cardiconaddition) {
+		\small{
+			\trajan #1
+		}
+	};
+}
+
+%   Add title of the card to banner
+\newcommand{\cardtitle}[1]{
+	\node [] at ([xshift=0.55*\iconheight,yshift=1.1*\iconheight]cardbanner.south) {
+		\small{
+			\trajan #1
+		}
+	};
+}
+
+%   Add colored strip on top right
+\newcommand{\cardstrip}{
+	\node [anchor=north east,fill=\cardcolor,minimum width=\stripwidth,minimum height=\stripheight] at ([xshift=-\contentoffset]main.north east) {};
+}
+
+%   Write content into white area
+\newcommand{\cardcontent}[1]{
+	\node [] at (content) {
+		\rotatebox{270}{
+			\parbox[t][\contentwidth][c]{\contentheight}{
+				\begin{minipage}{\contentheight}
+					\centering
+					\begin{minipage}{0.9\textwidth}
+						\raggedright
+						\scriptsize{#1}
+					\end{minipage}
+				\end{minipage}
+			}
+		}
+	};
+}

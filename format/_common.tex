@@ -23,20 +23,6 @@
 \renewcommand\secheadstyle{\centering\Large\normalfont\noindent}
 \setaftersecskip{1sp}
 
-% Define Header / Footer
-\makepagestyle{mystyle}
-\setheaderspaces{*}{3\onelineskip}{*}
-\makeevenhead{mystyle}{}{Dominion Card Dividers - Created by Danilo Gasdzik based on the works of Eiko Wagenknecht. \\ Dominion Kartentrenner - Erstellt von Danilo Gasdzik basierend auf der Arbeit von Eiko Wagenknecht. \\ \rightmark}{}
-\makeoddhead{mystyle}{}{Dominion Card Dividers - Created by Danilo Gasdzik based on the works of Eiko Wagenknecht. \\ Dominion Kartentrenner - Erstellt von Danilo Gasdzik basierend auf der Arbeit von Eiko Wagenknecht. \\ \leftmark}{}
-\setheadfoot{1em}{\onelineskip}
-\makeevenfoot{mystyle}{\tiny{\hspace{1cm}Entlang der schwarzen Linien ausschneiden. Je nach gewünschter\\\vspace{-0.5em}\hspace{1cm}Größe der Kartentrenner die obere oder untere Linie wählen.}}{\thepage}{\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
-\makeoddfoot{mystyle}{\tiny{\hspace{1cm}Entlang der schwarzen Linien ausschneiden. Je nach gewünschter\\\vspace{-0.5em}\hspace{1cm}Größe der Kartentrenner die obere oder untere Linie wählen.}}{\thepage}{\tiny{Cut along the black edge. For your desired size choose the upper or lower line.\hspace{1cm}}}
-\renewcommand*{\sectionmark}[1]{%
-  \markboth%
-  {\thesection.\ \MakeTextUppercase{#1}}%
-  {\thesection.\ \MakeTextUppercase{#1}}}
-\pagestyle{mystyle}
-
 % Enum without indent
 \newcounter{mycounter}  
 \newenvironment{noindlist}

@@ -1,11 +1,17 @@
 %!TEX program = lualatex
 
-\documentclass[a4paper,oneside]{memoir}
+\documentclass{article}
+\usepackage[paperheight=126.7mm,paperwidth=75.9mm,top=0cm,bottom=0cm,right=0cm,left=0cm,heightrounded,showframe]{geometry} 
 \input{format/_common.tex}
 \input{format/_shortcuts.tex}
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{-10pt}{0pt}
+\titleformat*{\section}{\normalfont\fontsize{1}{1}\bfseries}
+\renewcommand\section[1]{}
 
+	
 % Draw cards in portrait format
- \input{format/blackportrait.tex}
+ \input{format/blackportrait_tarot.tex}
 % \input{format/setcolorportrait.tex}
 % Draw cards in landscape format
 % \input{format/blacklandscape.tex}
@@ -46,12 +52,6 @@
 
 \begin{document}
 	\begin{center}
-		\begin{minipage}{0.75\textwidth}
-			\Huge 
-			Dominion Kartentrenner
-			\normalsize
-			\tableofcontents
-		\end{minipage}
 	    	
 	    \input{sets/de/basecards.tex}
 	    \input{sets/de/basic1HIG2008.tex}
