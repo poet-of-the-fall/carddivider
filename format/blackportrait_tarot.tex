@@ -8,10 +8,10 @@
 \pgfmathsetlengthmacro{\iconheight}{0.5cm}
 \pgfmathsetmacro{\iconoffset}{0.175cm}
 \pgfmathsetmacro{\stripwidth}{0.2cm}
-\pgfmathsetmacro{\stripheight}{1.31cm}
+\pgfmathsetmacro{\stripheight}{\the\paddingtop-2.9mm}
 \pgfmathsetlengthmacro{\seticonheight}{0.3cm}
-\pgfmathsetmacro{\contentoffset}{0.61cm}
-\pgfmathsetmacro{\contentoffsettop}{1.6cm}
+\pgfmathsetmacro{\contentoffset}{\the\padding}
+\pgfmathsetmacro{\contentoffsettop}{\the\paddingtop}
 \pgfmathsetlengthmacro{\contentwidth}{\cardwidth-\contentoffset-\contentoffset}
 \pgfmathsetlengthmacro{\contentheight}{\cardheight-\contentoffset-\contentoffsettop}
 \pgfmathsetmacro{\cardoffset}{0.4cm}
