@@ -111,11 +111,11 @@
 	\cardicon{icons/coin.png}
 	\cardprice{4}
 	\cardtitle{\scriptsize{Dorfanger (1/2)}}
-	\cardcontent{Wenn du den \emph{DORFANGER} spielst, wähle aus, ob du +1 Karte und +2 	Aktionen sofort ausführst oder zu Beginn deines nächsten Zuges.
+	\cardcontent{Wenn du den \emph{DORFANGER} spielst, wähle aus, ob du +1 Karte und +2 Aktionen sofort ausführst oder zu Beginn deines nächsten Zuges.
 
 	\begin{itemize}
-		\item Wenn du \enquote{sofort} auswählst, wird der \emph{DORFANGER} in der Aufräumphase dieses Zuges abgelegt.
-		\item Wenn du \enquote{zu Beginn deines nächsten Zuges} auswählst, wird der \emph{DORFANGER} in deinem nächsten Zug abgelegt.
+		\item[\rightarrow] Wenn du \enquote{sofort} auswählst, wird der \emph{DORFANGER} in der Aufräumphase dieses Zuges abgelegt.
+		\item[\rightarrow] Wenn du \enquote{zu Beginn deines nächsten Zuges} auswählst, wird der \emph{DORFANGER} in deinem nächsten Zug abgelegt.
 	\end{itemize}
 	
 	Wenn du den \emph{DORFANGER} mehrmals spielst, wie z.B. mit dem \emph{DRAHTZIEHER}, wählst du jedes Mal, ob du +1 Karte und +2 Aktionen sofort oder zu Beginn deines nächsten Zuges ausführst. Der \emph{DORFANGER} bleibt dann nur bis zu deinem nächsten Zug im Spiel, wenn du dich mindestens bei einem Spielen des \emph{DORFANGERS} für eine Nutzung im nächsten Zug entschieden hast (in diesem Fall bleibt der \emph{DRAHTZIEHER} auch im Spiel).
@@ -391,32 +391,102 @@
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardtitle{Ereignisse (1/4)\qquad}
-	\cardcontent{}
+	\cardtitle{Ereignisse (1/5)\qquad}
+	\cardcontent{\emph{Verzögerung}: Wenn du die Aktionskarte zur Seite legst, musst du sie zu Beginn deines nächsten Zuges spielen. Wenn du mehrere Dinge zu Beginn deines Zuges machst, darfst du die Reihenfolge wählen. Die Aktionskarte zu Beginn deines nächsten Zuges zu spielen, verbraucht keine Aktion.
+
+	\medskip
+
+	\emph{Verzweiflung}: Wenn der \emph{FLUCH}-Stapel leer ist nimmst du keinen \emph{FLUCH} und erhältst nicht +1 Kauf und +\coin[2].
+	
+	\medskip
+
+	\emph{Plackerei}: Eine Aktionskarte auf diese Weise zu spielen, verbraucht keine Aktion.
+	
+	\medskip
+
+	\emph{Verfolgung}: Du darfst eine Karte nennen, die ihr nicht im Spiel verwendet. Wenn du das tust, werden alle vier Karten abgelegt, also offen auf den eigenen Ablagestapel gelegt.
+	
+	\medskip
+
+	\emph{Wagnis}: Das Spielen der Karte ist optional und verbraucht keine Aktion. Wenn du die Karte nicht spielst, unabhängig davon, ob sie eine Aktions- bzw. Geldkarte ist oder nicht, lege sie ab.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardtitle{Ereignisse (2/4)\qquad}
-	\cardcontent{}
+	\cardtitle{Ereignisse (2/5)\qquad}
+	\cardcontent{\emph{Fußmarsch}: Du darfst deinen Ablagestapel nicht durchschauen, bevor du dich entscheidest, den \emph{FUSSMARSCH} zu erwerben, außer eine andere Anweisung erlaubt dir dies. Sobald du den \emph{FUSSMARSCH} erwirbst, schaust du aber durch deinen Ablagestapel und hast dann die Möglichkeit, eine Aktionskarte aus dem Stapel zu spielen. Dies verbraucht keine Aktion.
+
+	\medskip
+
+	\emph{Transport}: Es ist nur wichtig, ob die Karte selbst eine Aktionskarte ist, nicht, ob der gesamte Stapel aus Aktionskarten besteht (z.B. bei gemischten Stapeln). Durch den \emph{TRANSPORT} können auch Aktionskarten aus deinem \emph{Exil} auf deinen Nachziehstapel gelegt werden, die von anderen Karten in dein \emph{Exil} gelegt wurden.
+	
+	\medskip
+
+	\emph{Verbesserung}: Wenn du eine Karte entsorgst, musst du eine Karte nehmen, die bis zu \coin[2] mehr kostet als sie. Die genommene Karte darf auch gleichviel oder weniger kosten als die entsorgte Karte.
+	
+	\medskip
+
+	\emph{Gutes Geschäft}: Die Mitspieler nehmen die \emph{PFERDE} in Zugreihenfolge (beginnend bei dem Spieler links von dir). Sie können nicht ablehnen, ein \emph{PFERD} zu nehmen.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardtitle{Ereignisse (3/4)\qquad}
-	\cardcontent{}
+	\cardtitle{Ereignisse (3/5)\qquad}
+	\cardcontent{\emph{Investition}: Es ist nur wichtig, ob die Karte, die du verbannst, eine Aktionskarte ist, nicht, ob der gesamte Stapel aus Aktionskarten besteht (z.B. bei gemischten Stapeln). Während die Karte verbannt ist, ziehst du für jedes Mal 2 Karten, wenn ein Mitspieler eine gleiche Karte nimmt oder die \emph{INVESTITION} benutzt, um eine gleiche Karte zu verbannen. Dies ist nicht optional und wirkt kumulativ; wenn du mit der \emph{INVESTITION} zweimal die gleiche Karte verbannst, erhältst du 4 Karten für jedes Mal, wenn ein anderer Spieler eine gleiche Karte nimmt oder eine gleiche Karte mit der \emph{INVESTITION} verbannt.
+
+	\smallskip
+
+	Wenn es im Spiel eine andere Art und Weise gibt, Karten zu verbannen, bewahre die durch \emph{INVESTITION} verbannten Karten getrennt von den übrigen Karten auf. Du kannst sie z.B. halb unter dein \emph{Exil}-Tableau legen.
+	\\
+	Diese anderen verbannten Karten wurden nicht durch \emph{INVESTITION} verbannt und führen nicht dazu, dass du Karten ziehen darfst. Karten, die mit \emph{INVESTITION} verbannt wurden, können normal vom Tableau abgelegt werden, indem du eine weitere Karte gleichen Namens nimmst. Danach ziehst du keine Karten mehr, wenn ein anderer Spieler gleiche Karten nimmt oder sie mit \emph{INVESTITION} verbannt. Du kannst auch mehrere Karten mit unterschiedlichem Namen gleichzeitig auf diese Weise im \emph{Exil} haben, wenn du sie vorher nach und nach mit \emph{INVESTITION} verbannt hast.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
 	\card
 	\cardstrip
 	\cardbanner{banner/white.png}
-	\cardtitle{Ereignisse (4/4)\qquad}
-	\cardcontent{}
+	\cardtitle{Ereignisse (4/5)\qquad}
+	\cardcontent{\emph{Nutze den Tag}: Der zusätzliche Zug ist wie ein normaler Zug, wird aber nicht gezählt, wenn es am Spielende zu einem Gleichstand kommt.
+
+	\medskip
+
+	\emph{Verbannung}: Du kannst z.B. drei \emph{ANWESEN} aus deiner Hand verbannen. Alle Karten, die du mit diesem Ereignis verbannst, müssen exakt den gleichen Namen haben.
+	
+	\medskip
+
+	\emph{Forderung}: Du legst zuerst das \emph{PFERD} auf deinen Nachziehstapel, dann die Karte, die bis zu \coin[4] kostet, darauf.
+	
+	\medskip
+
+	\emph{Kommerz}: Du zahlst zunächst, wie viele Karten mit unterschiedlichen Namen du in diesem Zug genommen hast, dann nimmst du dir entsprechend viele \emph{GOLD}. Wenn du z.B. zwei \emph{PROVINZEN}, ein \emph{SILBER} und ein \emph{PFERD} genommen hast, nimmst du drei \emph{GOLD}. Dies betrifft nur die Karten, die du in diesem Zug bereits genommen hast, nicht die Karten, die du im weiteren Verlauf deines Zuges noch nimmst.
+	
+	\medskip
+	
+	\emph{Stampede}: Es spielt keine Rolle, wie viele Karten du in diesem Zug gespielt hast, nur wie viele du zu dem Zeitpunkt im Spiel hast, wenn du die \emph{STAMPEDE} erwirbst. Wenn weniger als 5 \emph{PFERDE} im \emph{PFERDE}-Stapel liegen, erhältst du so viele wie möglich.}
+\end{tikzpicture}
+\hspace{-0.6cm}
+\begin{tikzpicture}
+	\card
+	\cardstrip
+	\cardbanner{banner/white.png}
+	\cardtitle{Ereignisse (5/5)\qquad}
+	\cardcontent{\tiny{\emph{Reiche Ernte}: Dies bedeutet, dass du zu Beginn deines nächsten Zuges ein \emph{GOLD} im Spiel hast und dadurch +\coin[3]. Du legst das \emph{GOLD} in dem Zug normal ab. Wenn mehrere Dinge zu Beginn deines Zuges passieren, darfst du die Reihenfolge wählen. Dies führt nicht dazu, dass du deine Aktionsphase überspringst.
+
+	\medskip
+
+	\emph{Enklave}: Das \emph{HERZOGTUM} wird direkt vom \emph{HERZOGTUM}-Stapel auf dein \emph{Exil}-Tableau gelegt.
+	
+	\medskip
+
+	\emph{Besiedlung}: Du nimmst die oberste Karte von jedem Aktionskartenstapel im Vorrat. Du erhältst keine Karten, die nicht zum Vorrat gehören, wie das \emph{PFERD}, oder Nicht-Aktionskarten wie das \emph{DEPOT}. Liegen in einem Aktionskartenstapel verschiedene Karten, wie die \emph{RITTER} (aus \emph{Dark Ages}), erhältst du nur die oberste. Ist ein Aktionskartenstapel leer, erhältst du keine Karten von ihm. Du wählst die Reihenfolge aus, in der du die Karten erhältst, was manchmal eine Rolle spielt. Normalerweise kannst du von jedem Stapel eine Karte wegnehmen und dann entscheiden, in welcher Reihenfolge du sie tatsächlich nimmst. Bei Stapeln mit verschiedenen Karten ist der Stapel nur dann ein Aktionskartenstapel, wenn die Platzhalter-Karte eine Aktionskarte ist. So sind die \emph{SCHLÖSSER} (aus \emph{Empires}) kein Aktionskartenstapel. Wenn du \emph{KAVALLERIE} oder \emph{VILLA} (aus \emph{Empires}) mit der \emph{BESIEDLUNG} nimmst, kehrst du sofort in deine Aktionsphase zurück, beendest aber trotzdem zunächst das Nehmen der Karten, die dir durch die \emph{BESIEDLUNG} zustehen, bevor du weitere Dinge tust.
+	
+	\medskip
+
+	\emph{Bündnis}: Du nimmst sämtliche genannte Karten, soweit sie im Vorrat liegen. Du kannst dich nicht entscheiden, keine Karte zu nehmen. Du nimmst die Karten in der genannten Reihenfolge.}}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -424,7 +494,19 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardtitle{Wege (1/4)\qquad}
-	\cardcontent{}
+	\cardcontent{\emph{Weg des Affen}: Du erhältst +1 Kauf und +\coin[1].
+
+	\medskip
+		
+	\emph{Weg des Chamäleons}: Wenn du z.B. den \emph{HIRTENHUND} spielst und den \emph{Weg des Chamäleons} benutzt, erhältst du +\coin[2] anstelle von +2 Karten. Wenn du eine Dauerkarte mit dem \emph{Weg des Chamäleons} spielst, sind nur die +\coin und +X Karten, die du in dem Zug erhältst, betroffen. Wenn du z.B. ein \emph{HANDELSSCHIFF} (aus \emph{Seaside}) spielst und den \emph{Weg des Chamäleons} benutzt, erhältst du +2 Karten in diesem Zug, aber die normalen +\coin[2] im nächsten Zug. Diese Karte macht \enquote{+ Karten} zu \enquote{+\coin} und umgekehrt, verändert aber keine anderen Arten, Karten zu ziehen wie z.B. \enquote{Ziehe solange Karten nach, bis du 6 Karten auf der Hand hast.} Wenn die Aktionskarte, für die du den \emph{Weg des Chamäleons} nutzt, das Spielen einer anderen Karte nach sich zieht, macht jene Karte, was sie normalerweise macht (außer du nutzt den \emph{Weg des Chamäleons} auch für sie).
+	
+	\medskip
+	
+	\emph{Weg des Eichhörnchens}: Normalerweise ziehst du zwei Karten, nachdem du in deiner Aufräumphase Karten auf die Hand gezogen hast. Wenn du den \emph{Weg des Eichhörnchens} benutzt, während du nicht am Zug bist (wie z.B. durch die \emph{SCHWARZE KATZE}), ziehst du trotzdem zwei Karten am Ende des Zuges.
+
+	\medskip
+
+	\emph{Weg der Eule}: Wenn du schon 6 oder mehr Karten auf der Hand hast, ziehst du keine Karten.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -432,7 +514,23 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardtitle{Wege (2/4)\qquad}
-	\cardcontent{}
+	\cardcontent{\emph{Weg des Frosches}: Du erhältst +1 Aktion. Wenn du diese Karte in diesem Zug aus dem Spiel ablegst, lege sie auf deinen Nachziehstapel.
+	
+	\medskip
+	
+	\emph{Weg des Kamels}: Verbanne ein Gold aus dem Vorrat.
+	
+	\medskip
+
+	\emph{Weg des Maultiers}: Du erhälts +1 Aktion und +\coin[1].
+
+	\medskip
+	
+	\emph{Weg des Maulwurfs}: Du ziehst 3 Karten, auch wenn du keine Karten mehr zum Ablegen hattest.
+	
+	\medskip
+	
+	\emph{Weg der Maus}: Legt zu Spielbeginn eine nicht verwendete Aktions-Königreichkarte, die \coin[2] oder \coin[3] kostet, zur Seite. Trefft die entsprechenden Vorbereitungen für diese Karte. Wenn du den Weg der Maus nutzt, spielst du die zur Seite gelegte Karte und lässt die Karte zur Seite gelegt. Wenn ihr z.B. den \emph{SCHLITTEN} zur Seite legt, kann jede Aktionskarte dazu benutzt werden, um 2 \emph{PFERDE} zu nehmen. Die zur Seite gelegte Karte befindet sich nicht im Spiel, auch nicht wenn sie gerade genutzt wird. Sie kann weder entsorgt noch durch Anweisungen auf anderen Karten anderweitig zur Seite gelegt werden. Wenn die Karte z.B. das \emph{EMBARGO} ist (aus \emph{Seaside}), kann sie nicht entsorgt werden. Texte unterhalb der Trennlinie (außer die, die die Spielvorbereitung betreffen), haben keine Wirkung.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -440,7 +538,27 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardtitle{Wege (3/4)\qquad}
-	\cardcontent{}
+	\cardcontent{\emph{Weg des Ochsen}: Du erhältst +2 Aktionen.
+	
+	\medskip
+	
+	\emph{Weg des Otters}: Du erhältst +2 Karten.
+	
+	\medskip
+	
+	\emph{Weg des Pferdes}: Die Aktionskarte wird auf ihren Stapel zurückgelegt, auch wenn er nicht zum Vorrat gehört. Eine Aktionskarte ohne Stapel, wie die \emph{TOTENSTADT} aus \emph{Dark Ages}, wird nicht auf ihren Stapel zurückgelegt.
+
+	\medskip
+
+	\emph{Weg der Ratte}: Diese Karte bringt dir nur Karten aus dem Vorrat. Mit \enquote{diese Karte} ist -- wie bei allen \emph{Wege}-Karten -- die Aktionskarte gemeint, für die du die \emph{Wege}-Karte nutzt.
+
+	\medskip
+
+	\emph{Weg der Robbe}: Dies betrifft alle genommenen Karten, sowohl die gekauften als auch die auf irgendeine andere Weise genommenen. Die Karte wird zuerst dahin genommen, wohin sie normalerweise genommen würde, dann kannst du sie auf deinen Nachziehstapel legen. Bewegt sie sich zwischendurch woandershin (z.B. durch die Entsorgung durch den \emph{WACHTURM} aus \emph{Blütezeit}), kannst du sie nicht bewegen.
+	
+	\medskip
+	
+	\emph{Weg des Schafes}: Du erhälts +\coin[2].}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -448,7 +566,23 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardtitle{Wege (4/4)\qquad}
-	\cardcontent{}
+	\cardcontent{\emph{Weg der Schildkröte}: Wenn du die Aktionskarte zu Beginn deines nächsten Zuges spielst, kannst du den \emph{Weg der Schildkröte} erneut benutzen, um das Spielen der Karte um einen weiteren Zug zu verschieben. Dies kannst du immer weiter tun. Die Karte im nächsten Zug zu spielen verbraucht dort keine Aktion. Wenn du eine Karte wie den \emph{THRONSAAL} (aus dem \emph{Basisspiel}) benutzt, um eine Karte zweimal zu spielen, und dann den \emph{Weg der Schildkröte} benutzt, wird dadurch nicht der \emph{THRONSAAL} zur Seite gelegt oder im Spiel behalten wie beim Spielen von Dauerkarten.
+
+	\smallskip
+
+	\emph{Weg des Schmetterlings}: Du nimmst nur dann eine Karte, wenn du es schaffst, die Aktionskarte auf ihren Stapel zurückzulegen. Eine Karte, die nicht zum Vorrat gehört (wie das \emph{PFERD}), kann zu ihrem Stapel zurückkehren. Eine Aktionskarte ohne Stapel, wie die \emph{TOTENSTADT} (aus \emph{Dark Ages}), kannst du nicht auf ihren Stapel zurücklegen. Die Karte, die du nimmst, kommt vom Vorrat und kann jeden Typ haben. Gibt es im Vorrat keine Karte, die genau \coin[1] mehr kostet als die zurückgelegte Karte, nimmst du keine.
+
+	\smallskip
+
+	\emph{Weg des Schweins}: Du erhälts +1 Karte und +1 Aktion.
+
+	\smallskip
+
+	\emph{Weg des Wurms}: Verbanne ein Anwesen aus dem Vorrat.
+
+	\smallskip
+
+	\emph{Weg der Ziege}: Entsorge eine deiner Handkarte.}
 \end{tikzpicture}
 \hspace{-0.6cm}
 \begin{tikzpicture}
@@ -568,7 +702,7 @@
 	\cardstrip
 	\cardbanner{banner/white.png}
 	\cardtitle{\footnotesize{Neue Regeln (3/10)}\qquad}
-	\cardcontent{\tiny{\textit{Zusatzliche Hinweise}
+	\cardcontent{\tiny{\textit{Zusätzliche Hinweise}
 	\begin{itemize}
 		\item Auf einigen \emph{Wegen} steht \enquote{diese Karte}. Damit ist die Aktionskarte gemeint, die du mit der Anweisung des \emph{Weges} spielst, nicht die \emph{Wege}-Karte selbst. Der \emph{Weg der Schildkröte} sagt z.B. \enquote{Lege diese Karte zur Seite.}: Wenn du einen \emph{MARKT} spielst, aber den \emph{Weg der Schildkröte} benutzt, legst du den \emph{MARKT} zur Seite.
 		\item Wenn eine \emph{ZAUBERIN} (aus \emph{Empires}) dich betrifft, darfst du die Anweisungen der ersten gespielten Aktionskarte nicht ausführen. Du darfst aber statt der Anweisungen auf der Aktionskarte die Anweisungen auf einer \emph{Wege}-Karte ausführen. Dann bekommst du aber nicht +1 Karte und +1 Aktion.
