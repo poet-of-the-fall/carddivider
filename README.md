@@ -10,6 +10,28 @@ You will also need to download the TrajanPro font. See these two links: [Regular
 
 **Feel free to add further card sets, editions, languages or formats or correct some errors or typos. To do so fork the project and open a pull request or use the issues section if you aren't familiar with LaTex and/or Github.**
 
+## Download the PDFs
+
+For those of you who are not familiar with Github here some short words on where to find the PDFs and how to download them.
+
+### Get all
+
+You can copy the whole project and download it as a `.zip` file by clicking on **Code** and **Download ZIP**. You can then extract it on your computer and will find the PDFs directly in the folder you extracted.
+
+![Download the whole project](images/download_all.png)
+
+### Get one
+
+You can also select just the one you want. Simply click the one you like either in the files list above or in the following list and then the **Download** button on the page that opens. Available styles:
+
+- [Black Portrait](cards_de_all_portrait.pdf)
+- [Setcolor Portrait](cards_de_all_portrait_setcolor.pdf)
+- [Black Landscape](cards_de_all_landscape.pdf)
+- [Setcolor Landscape](cards_de_all_landscape_setcolor.pdf)
+
+![Select the PDF](images/download_one1.png)
+![Download the file](images/download_one2.png)
+
 ## Compiling the PDFs
 
 You can use TexStudio or some other editor to edit the files and compile the PDFs. Remember to change your standard compiler to *lualatex* if you compile the PDFs with your editor.
