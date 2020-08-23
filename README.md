@@ -102,6 +102,7 @@ Further defined colors for the card sets:
 - empires
 - nocturne
 - renaissance
+- menagerie
 - promo
 
 ## Shortcuts / defined commands
@@ -109,10 +110,10 @@ Further defined colors for the card sets:
 The ```format/_shortcuts.tex``` defines some frequently used commands to use them as a shortcut.
 
 - coin ( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/coin.png?raw=true" width="16"> 
-): Takes one optional argument and draws a coin containing the text of the given argument (usage: ```\coin[2]``` draws a coin containing a "2").
+): Takes one optional argument and draws a coin containing the text of the given argument (usage: ```\coin[2]``` draws a coin containing a "2", ```\coin``` draws an empty one).
 
 - hex( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/hex.png?raw=true" width="16"> 
-): Takes one optional argument and draws a hex containing the text of the given argument (usage: ```\hex[1]``` draws a hex containing a "1").
+): Takes one optional argument and draws a hex containing the text of the given argument (usage: ```\hex[1]``` draws a hex containing a "1", ```\hex```draws an empty one).
 
 - victorypointtoken( <img src="https://github.com/poet-of-the-fall/carddivider/blob/master/icons/victorypointtoken.png?raw=true" width="16"> 
 ): Draws a victory point token (the one containing with a "1" on it, usage: ```\victorypointtoken```). 
