@@ -144,5 +144,6 @@
         "whitegreen",
         "xcolor",
         "xifthen"
-    ]
+    ],
+    "editor.wordWrap": "on"
 }
