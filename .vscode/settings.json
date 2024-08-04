@@ -1,4 +1,5 @@
 {
+    "latex-workshop.latex.build.forceRecipeUsage": false,
     "cSpell.language": "en,de",
     "latex-workshop.latex.tools": [
         {
